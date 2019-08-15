@@ -4,10 +4,8 @@
 #include "src/base/IoUtils.h"
 #include "src/LFNS/seq/LFNSSeq.h"
 #include "src/sampler/UniformSampler.h"
-#include "src/sampler/EllipsoidSampler.h"
 #include "src/sampler/DpGmmSampler.h"
 #include "src/sampler/GaussianSampler.h"
-#include "src/sampler/KernelDensityEstimation.h"
 
 static std::string model_summary_suffix = "model_summary";
 static std::stringstream model_summary_stream;

@@ -1,5 +1,0 @@
-Initial Values:
-z1:  0
-z2:  0
-x1:  0
-_t: 0

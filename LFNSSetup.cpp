@@ -7,14 +7,10 @@
 #include "src/LFNS/LFNS.h"
 #include "src/base/IoUtils.h"
 #include "src/simulator/SimulatorOde.h"
-#include "src/simulator/SimulatorSsa.h"
 #include "src/sampler/DpGmmSampler.h"
 #include "src/sampler/RejectionSupportSampler.h"
 #include "src/sampler/GaussianSampler.h"
-#include "src/sampler/KernelSupportEstimation.h"
-#include "src/sampler/SliceSampler.h"
 #include "src/sampler/UniformSampler.h"
-#include "src/sampler/EllipsoidSampler.h"
 
 
 LFNSSetup::LFNSSetup(options::LFNSOptions options, int process_nbr) : GeneralSetup(options, process_nbr),
@@ -149,35 +145,6 @@ LFNSSetup::_createDensityEstimation(lfns::LFNSSettings lfns_settings, sampler::S
             rej_data.rejection_quantile_low_accept = lfns_settings.rejection_quantile_low_accept;
 
             density_estimation_ptr = std::make_shared<sampler::RejectionSupportSampler>(rng, dpgmm_sampler, rej_data);
-            break;
-        }
-        case lfns::KDE_GAUSS: {
-            sampler::NormalSamplerData normal_data(sampler_data);
-            normal_data.cov = base::EiMatrix::Identity(sampler_data.size(), sampler_data.size()) * 0.1;
-            sampler::GaussianSampler_ptr gauss_kernel = std::make_shared<sampler::GaussianSampler>(rng, normal_data);
-
-            density_estimation_ptr = std::make_shared<sampler::KernelSupportEstimation>(rng, gauss_kernel,
-                                                                                        sampler_data);
-            break;
-        }
-        case lfns::KDE_UNIFORM: {
-            sampler::UniformSamplerData unif_data(sampler_data);
-            sampler::KernelSampler_ptr unif_kernel = std::make_shared<sampler::UniformSampler>(rng, unif_data);
-            density_estimation_ptr = std::make_shared<sampler::KernelSupportEstimation>(rng, unif_kernel,
-                                                                                        sampler_data);
-            break;
-        }
-        case lfns::ELLIPS: {
-            density_estimation_ptr = std::make_shared<sampler::EllipsoidSampler>(rng, sampler_data);
-            break;
-        }
-        case lfns::SLICE: {
-            sampler::SliceSampler_ptr sampler_ptr = std::make_shared<sampler::SliceSampler>(rng, sampler_data,
-                                                                                            mult_like_eval.getLogLikeFun(),
-                                                                                            &threshold);
-            sampler_ptr->setLogScaleIndices(settings.getLogParams());
-            density_estimation_ptr = sampler_ptr;
-
             break;
         }
     }

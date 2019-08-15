@@ -6,12 +6,12 @@
 #define LFNS_GENERALSETUP_H
 
 
-#include "src/options/ComputeLikelihoodOptions.h"
 #include "src/io/IoSettings.h"
 #include "src/models/ModelSettings.h"
 #include "src/models/FullModel.h"
 #include "src/simulator/Simulator.h"
 #include "src/io/ConfigFileInterpreter.h"
+#include "src/options/CommandLineOptions.h"
 
 class GeneralSetup {
 

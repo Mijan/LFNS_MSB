@@ -1,3 +1,0 @@
-Initial Values:
-mRNA:	0
-_t: 0

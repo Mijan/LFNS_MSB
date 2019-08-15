@@ -1,0 +1,2 @@
+  i	        epsilon	     Acceptance rate	     seconds	       log(Z_tot)	     log(Var(Z_tot))	            log(Z_D)	       log(Var(Z_D))	            log(Z_L)	       log(Var(Z_L))	        log(Var_min)	           Delta_max	          Delta_LFNS	    sampling seconds
+  1	   -8.38107e+06	                   1	    0.413914	          80.1343	             156.928	        -8.47966e+06	        -1.69593e+07	             80.1343	             156.928	              151.85	         8.47974e+06	             -1.7525	            0.002184

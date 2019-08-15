@@ -6,12 +6,9 @@
 #include "../sampler/UniformSampler.h"
 #include "../sampler/RejectionSupportSampler.h"
 #include "../sampler/DpGmmSampler.h"
-#include "../sampler/EllipsoidSampler.h"
 #include "../sampler/GaussianSampler.h"
-#include "../sampler/KernelSupportEstimation.h"
 #include "../particle_filter/ParticleFilterSettings.h"
 #include "boost/serialization/shared_ptr.hpp"
-#include "../sampler/SliceSampler.h"
 
 namespace lfns {
 
