@@ -55,18 +55,18 @@
 <data>
 	<dataset>
 		<experiments>sus_2-5ng sus_250ng 3_20_2-5ng 3_20_250ng</experiments>
-		<datafile>../Yannick_data/fgf_sus/2-5ng_mean_trunc.txt ../Yannick_data/fgf_sus/250ng_mean_trunc.txt ../Yannick_data/fgf_3_20/2-5ng_mean_trunc.txt ../Yannick_data/fgf_3_20/250ng_mean_trunc.txt</datafile>
-		<timefile>../Yannick_data/fgf_sus/time_trunc.txt</timefile>
+		<datafile>../data/fgf_sus/2-5ng_mean_trunc.txt ../data/fgf_sus/250ng_mean_trunc.txt ../data/fgf_3_20/2-5ng_mean_trunc.txt ../data/fgf_3_20/250ng_mean_trunc.txt</datafile>
+		<timefile>../data/fgf_sus/time_trunc.txt</timefile>
     </dataset>
     <dataset>
         <experiments>sp_5_2-5ng sp_5_25ng sp_5_250ng</experiments>
-        <datafile>../Yannick_data/fgf_sp_5/2-5ng_mean_trunc.txt</datafile>
-        <timefile>../Yannick_data/fgf_sp_5/time_trunc.txt</timefile>
+        <datafile>../data/fgf_sp_5/2-5ng_mean_trunc.txt</datafile>
+        <timefile>../data/fgf_sp_5/time_trunc.txt</timefile>
     </dataset>
     <dataset>
         <experiments>mixed_2-5ng mixed_25ng mixed_250ng</experiments>
-        <datafile>../Yannick_data/fgf_mixed/2-5ng_mean_trunc.txt ./Yannick_data/fgf_mixed/25ng_mean_trunc.txt ../Yannick_data/fgf_mixed/250ng_mean_trunc.txt</datafile>
-        <timefile>../Yannick_data/fgf_mixed/time_trunc.txt</timefile>
+        <datafile>../data/fgf_mixed/2-5ng_mean_trunc.txt ./data/fgf_mixed/25ng_mean_trunc.txt ../data/fgf_mixed/250ng_mean_trunc.txt</datafile>
+        <timefile>../data/fgf_mixed/time_trunc.txt</timefile>
     </dataset>
 </data>
 <inputs>
@@ -128,7 +128,7 @@
 	<experiments>sus_2-5ng sus_250ng 3_20_2-5ng 3_20_250ng</experiments>
 	<N>1000</N>
 	<H>1</H>
-    <r>100</r>
+    <r>500</r>
 	<tolerance>0.000000000001</tolerance>
 	<minstepsize>1e-12</minstepsize>
 	<reltol>1e-10</reltol>
