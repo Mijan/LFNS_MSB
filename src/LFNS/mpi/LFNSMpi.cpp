@@ -7,10 +7,7 @@
 #include "RequestQueue.h"
 #include "MpiRequest.h"
 #include "../../sampler/DpGmmSampler.h"
-#include "../../sampler/EllipsoidSampler.h"
 #include "../../sampler/GaussianSampler.h"
-#include "../../sampler/KernelDensityEstimation.h"
-#include "../../sampler/KernelSupportEstimation.h"
 #include "../../sampler/RejectionSupportSampler.h"
 #include "../../sampler/UniformSampler.h"
 #include "../../base/IoUtils.h"
@@ -25,9 +22,6 @@ BOOST_CLASS_EXPORT_GUID(sampler::Sampler, "Sampler");
 BOOST_CLASS_EXPORT_GUID(sampler::KernelSampler, "KernelSampler");
 BOOST_CLASS_EXPORT_GUID(sampler::DensityEstimation, "DensityEstimation");
 BOOST_CLASS_EXPORT_GUID(sampler::DpGmmSampler, "DpGmmSampler");
-BOOST_CLASS_EXPORT_GUID(sampler::EllipsoidSampler, "EllipsoidSampler");
-BOOST_CLASS_EXPORT_GUID(sampler::KernelDensityEstimation, "KernelDensityEstimation");
-BOOST_CLASS_EXPORT_GUID(sampler::KernelSupportEstimation, "KernelSupportEstimation");
 BOOST_CLASS_EXPORT_GUID(sampler::RejectionSupportSampler, "RejectionSupportSampler");
 BOOST_CLASS_EXPORT_GUID(sampler::UniformSampler, "UniformSampler");
 BOOST_CLASS_EXPORT_GUID(sampler::GaussianSampler, "GaussianSampler");
