@@ -4,7 +4,6 @@
 
 #include "SimulationSetup.h"
 #include "src/io/ConfigFileInterpreter.h"
-#include "src/simulator/SimulatorSsa.h"
 #include "src/simulator/SimulatorOde.h"
 
 
