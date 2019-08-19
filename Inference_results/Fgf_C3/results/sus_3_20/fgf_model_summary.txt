@@ -1,0 +1,347 @@
+Problem file: /cluster/home/mijan/ERK/Models_paper/Fgf_C3/results/sus_3_20/../../problem_fgf_sus_3_20.xml
+Output file: /cluster/home/mijan/ERK/Models_paper/Fgf_C3/results/sus_3_20/./fgf.txt
+
+All provided trajectories will be used for the likelihood computation.
+Ode solver settings read from problem file:
+     min step size:	1e-12
+relative tolerance:	1e-10
+absolute tolerance:	1e-10
+Number of aNS particles read from problem file: 
+	1000
+Number of SMC particles read from command line: 
+	1
+Number of DPGMM iterations read from problem file: 
+	50
+Alpha value read from command line: 
+	0.5
+Rejection quantile value read from problem file: 
+	0.05
+If the acceptance rate falls below 0.01 the rejection quantile will be set to 0.2
+
+aNS Tolerance read from problem file: 
+	1e-12
+Print output frequency read from command line:
+	1
+A previous population file was provided and will be read from:
+	./fgf.txt
+Previous super level set files found:
+	./fgf_1.txt
+	./fgf_2.txt
+	./fgf_3.txt
+	./fgf_4.txt
+	./fgf_5.txt
+	./fgf_6.txt
+	./fgf_7.txt
+	./fgf_8.txt
+	./fgf_9.txt
+	./fgf_10.txt
+	./fgf_11.txt
+	./fgf_12.txt
+	./fgf_13.txt
+	./fgf_14.txt
+	./fgf_15.txt
+	./fgf_16.txt
+	./fgf_17.txt
+	./fgf_18.txt
+	./fgf_19.txt
+	./fgf_20.txt
+	./fgf_21.txt
+	./fgf_22.txt
+	./fgf_23.txt
+	./fgf_24.txt
+	./fgf_25.txt
+	./fgf_26.txt
+	./fgf_27.txt
+	./fgf_28.txt
+	./fgf_29.txt
+	./fgf_30.txt
+	./fgf_31.txt
+	./fgf_32.txt
+	./fgf_33.txt
+	./fgf_34.txt
+	./fgf_35.txt
+	./fgf_36.txt
+	./fgf_37.txt
+	./fgf_38.txt
+	./fgf_39.txt
+	./fgf_40.txt
+	./fgf_41.txt
+	./fgf_42.txt
+	./fgf_43.txt
+	./fgf_44.txt
+	./fgf_45.txt
+	./fgf_46.txt
+	./fgf_47.txt
+	./fgf_48.txt
+	./fgf_49.txt
+	./fgf_50.txt
+	./fgf_51.txt
+	./fgf_52.txt
+	./fgf_53.txt
+	./fgf_54.txt
+	./fgf_55.txt
+	./fgf_56.txt
+	./fgf_57.txt
+	./fgf_58.txt
+	./fgf_59.txt
+	./fgf_60.txt
+	./fgf_61.txt
+	./fgf_62.txt
+	./fgf_63.txt
+	./fgf_64.txt
+	./fgf_65.txt
+	./fgf_66.txt
+	./fgf_67.txt
+	./fgf_68.txt
+	./fgf_69.txt
+	./fgf_70.txt
+	./fgf_71.txt
+	./fgf_72.txt
+	./fgf_73.txt
+	./fgf_74.txt
+	./fgf_75.txt
+	./fgf_76.txt
+	./fgf_77.txt
+	./fgf_78.txt
+	./fgf_79.txt
+	./fgf_80.txt
+	./fgf_81.txt
+	./fgf_82.txt
+	./fgf_83.txt
+	./fgf_84.txt
+	./fgf_85.txt
+	./fgf_86.txt
+	./fgf_87.txt
+	./fgf_88.txt
+	./fgf_89.txt
+	./fgf_90.txt
+	./fgf_91.txt
+	./fgf_92.txt
+	./fgf_93.txt
+	./fgf_94.txt
+	./fgf_95.txt
+	./fgf_96.txt
+	./fgf_97.txt
+	./fgf_98.txt
+	./fgf_99.txt
+	./fgf_100.txt
+	./fgf_101.txt
+	./fgf_102.txt
+	./fgf_103.txt
+	./fgf_104.txt
+	./fgf_105.txt
+	./fgf_106.txt
+	./fgf_107.txt
+	./fgf_108.txt
+	./fgf_109.txt
+	./fgf_110.txt
+	./fgf_111.txt
+	./fgf_112.txt
+	./fgf_113.txt
+	./fgf_114.txt
+	./fgf_115.txt
+	./fgf_116.txt
+	./fgf_117.txt
+	./fgf_118.txt
+	./fgf_119.txt
+	./fgf_120.txt
+	./fgf_121.txt
+	./fgf_122.txt
+	./fgf_123.txt
+	./fgf_124.txt
+	./fgf_125.txt
+	./fgf_126.txt
+	./fgf_127.txt
+	./fgf_128.txt
+	./fgf_129.txt
+	./fgf_130.txt
+	./fgf_131.txt
+	./fgf_132.txt
+	./fgf_133.txt
+	./fgf_134.txt
+	./fgf_135.txt
+	./fgf_136.txt
+	./fgf_137.txt
+	./fgf_138.txt
+	./fgf_139.txt
+	./fgf_140.txt
+	./fgf_141.txt
+	./fgf_142.txt
+	./fgf_143.txt
+	./fgf_144.txt
+	./fgf_145.txt
+	./fgf_146.txt
+	./fgf_147.txt
+	./fgf_148.txt
+	./fgf_149.txt
+	./fgf_150.txt
+	./fgf_151.txt
+	./fgf_152.txt
+	./fgf_153.txt
+	./fgf_154.txt
+	./fgf_155.txt
+	./fgf_156.txt
+	./fgf_157.txt
+	./fgf_158.txt
+	./fgf_159.txt
+	./fgf_160.txt
+	./fgf_161.txt
+	./fgf_162.txt
+	./fgf_163.txt
+	./fgf_164.txt
+	./fgf_165.txt
+	./fgf_166.txt
+	./fgf_167.txt
+	./fgf_168.txt
+	./fgf_169.txt
+	./fgf_170.txt
+	./fgf_171.txt
+	./fgf_172.txt
+	./fgf_173.txt
+	./fgf_174.txt
+	./fgf_175.txt
+	./fgf_176.txt
+	./fgf_176.txt
+Data for model configuration sus_2-5ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_C3/results/sus_3_20/../../../Yannick_data/fgf_sus/2-5ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+Data for model configuration sus_250ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_C3/results/sus_3_20/../../../Yannick_data/fgf_sus/250ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+Data for model configuration 3_20_2-5ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_C3/results/sus_3_20/../../../Yannick_data/fgf_3_20/2-5ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+Data for model configuration 3_20_250ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_C3/results/sus_3_20/../../../Yannick_data/fgf_3_20/250ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+
+       Parameters                  Bounds  Scale
+            k_1_2            [1e-06, 100]    log
+            K_1_2             [1e-06, 10]    log
+            k_2_1            [1e-06, 100]    log
+            K_2_1             [1e-06, 10]    log
+            k_3_4            [1e-06, 100]    log
+            K_3_4             [1e-06, 10]    log
+            K_NFB             [1e-06, 10]    log
+            k_4_3            [1e-06, 100]    log
+            K_4_3             [1e-06, 10]    log
+            k_5_6            [1e-06, 100]    log
+            K_5_6             [1e-06, 10]    log
+            k_6_5            [1e-06, 100]    log
+            K_6_5             [1e-06, 10]    log
+            k_7_8            [1e-06, 100]    log
+            K_7_8             [1e-06, 10]    log
+            k_8_7            [1e-06, 100]    log
+            K_8_7             [1e-06, 10]    log
+            f_1_2            [1e-06, 100]    log
+              f_h              [1e-05, 1]    log
+            F_1_2             [1e-06, 10]    log
+            h_hfr                [0.5, 6]    log
+            F_hfr             [1e-06, 10]    log
+           F_fgfr             [1e-06, 10]    log
+           h_fgfr                [0.5, 6]    log
+            f_2_1            [1e-06, 100]    log
+            F_2_1             [1e-06, 10]    log
+            h_nfb                [0.5, 6]    log
+        fgf_input              fixed to 0    log
+              r_h              [1e-05, 1]    log
+            r_3_4            [1e-06, 100]    log
+            r_4_3            [1e-06, 100]    log
+            r_5_6            [1e-06, 100]    log
+            r_6_5            [1e-06, 100]    log
+            r_5_7            [1e-06, 100]    log
+            r_7_5            [1e-06, 100]    log
+   fgfr_init_mean             [0.0001, 2]    log
+fgfr_init_log_std          fixed to 1e-06    log
+         nfb_init             [0.0001, 2]    log
+      h_init_mean             [0.0001, 2]    log
+   h_init_log_std          fixed to 1e-06    log
+       FRET_sigma           [0.0001, 0.1]    log
+           FRET_E               [0.01, 1]    log
+          erk_max            fixed to 0.8    log
+      erk_initial              fixed to 0    log
+Species names:
+	Ras
+	Ras_star
+	Raf
+	Raf_star
+	Mek
+	Mek_star
+	Erk
+	Erk_star
+	Nfb
+	Nfb_star
+	FgfR
+	FgfR_star
+	H
+	H_F
+	H_F_R
+
+
+##################### MODEL #####################
+
+Ode Model
+Parameters: k_1_2 K_1_2 k_2_1 K_2_1 k_3_4 K_3_4 K_NFB k_4_3 K_4_3 k_5_6 K_5_6 k_6_5 K_6_5 k_7_8 K_7_8 k_8_7 K_8_7 f_1_2 f_h F_1_2 h_hfr F_hfr F_fgfr h_fgfr f_2_1 F_2_1 h_nfb fgf_input r_h r_3_4 r_4_3 r_5_6 r_6_5 r_5_7 r_7_5 
+Species: Ras Ras_star Raf Raf_star Mek Mek_star Erk Erk_star Nfb Nfb_star FgfR FgfR_star H H_F H_F_R 
+
+Equations:
+      (d Ras)/dt = -(k_1_2*(r_h*H_F_R+(1-r_h)*FgfR_star)*(Ras/(K_1_2+Ras)))+(k_2_1*(Ras_star/(K_2_1+Ras_star))) 
+ (d Ras_star)/dt = (k_1_2*(r_h*H_F_R+(1-r_h)*FgfR_star)*(Ras/(K_1_2+Ras)))-(k_2_1*(Ras_star/(K_2_1+Ras_star))) 
+      (d Raf)/dt = -(k_3_4*Ras_star*(Raf/(K_3_4+Raf))*(K_NFB^h_nfb/(K_NFB^h_nfb+Nfb_star^h_nfb)))+(k_4_3*(Raf_star/(K_4_3+Raf_star))) 
+ (d Raf_star)/dt = (k_3_4*Ras_star*(Raf/(K_3_4+Raf))*(K_NFB^h_nfb/(K_NFB^h_nfb+Nfb_star^h_nfb)))-(k_4_3*(Raf_star/(K_4_3+Raf_star))) 
+      (d Mek)/dt = -(k_5_6*Raf_star*(Mek/(K_5_6+Mek)))+(k_6_5*(Mek_star/(K_6_5+Mek_star))) 
+ (d Mek_star)/dt = (k_5_6*Raf_star*(Mek/(K_5_6+Mek)))-(k_6_5*(Mek_star/(K_6_5+Mek_star))) 
+      (d Erk)/dt = -(k_7_8*Mek_star*(Erk/(K_7_8+Erk)))+(k_8_7*(Erk_star/(K_8_7+Erk_star))) 
+ (d Erk_star)/dt = (k_7_8*Mek_star*(Erk/(K_7_8+Erk)))-(k_8_7*(Erk_star/(K_8_7+Erk_star))) 
+      (d Nfb)/dt = -(f_1_2*(Nfb/(F_1_2+Nfb))*((f_h*(H_F_R^h_hfr)/(F_hfr^h_hfr+H_F_R^h_hfr))+((1-f_h)*(FgfR_star^h_fgfr)/(F_fgfr^h_fgfr+FgfR_star^h_fgfr))))+(f_2_1*(Nfb_star/(F_2_1+Nfb_star))) 
+ (d Nfb_star)/dt = (f_1_2*(Nfb/(F_1_2+Nfb))*((f_h*(H_F_R^h_hfr)/(F_hfr^h_hfr+H_F_R^h_hfr))+((1-f_h)*(FgfR_star^h_fgfr)/(F_fgfr^h_fgfr+FgfR_star^h_fgfr))))-(f_2_1*(Nfb_star/(F_2_1+Nfb_star))) 
+     (d FgfR)/dt = -(r_3_4*fgf_input*FgfR)+(r_4_3*FgfR_star)-(r_5_7*H_F*FgfR)+(r_7_5*H_F_R) 
+(d FgfR_star)/dt = (r_3_4*fgf_input*FgfR)-(r_4_3*FgfR_star) 
+        (d H)/dt = -(r_5_6*H*fgf_input)+(r_6_5*H_F) 
+      (d H_F)/dt = (r_5_6*H*fgf_input)-(r_6_5*H_F)-(r_5_7*H_F*FgfR)+(r_7_5*H_F_R) 
+    (d H_F_R)/dt = (r_5_7*H_F*FgfR)-(r_7_5*H_F_R) 
+
+
+##################### INITIAL VALUES #####################
+
+Parameters: fgfr_init_mean nfb_init h_init_mean 
+Species: Ras Raf Mek Erk FgfR FgfR_star Nfb Ras_star Raf_star Mek_star Erk_star Nfb_star H H_F H_F_R 
+      State Ras:	0.1 
+      State Raf:	0.7 
+      State Mek:	0.68 
+      State Erk:	0.26 
+     State FgfR:	fgfr_init_mean 
+State FgfR_star:	0 
+      State Nfb:	nfb_init 
+ State Ras_star:	0 
+ State Raf_star:	0 
+ State Mek_star:	0 
+ State Erk_star:	0 
+ State Nfb_star:	0 
+        State H:	h_init_mean 
+      State H_F:	0 
+    State H_F_R:	0 
+
+
+##################### MEASUREMENT MODEL #####################
+
+Parameters: FRET_sigma FRET_E erk_max erk_initial 
+Species: Erk Erk_star 
+
+Normal numbers:
+r_1:	mean: 0	std: 1
+
+
+Measurements:
+       fret_measure = (0.15*Erk_star+erk_initial*(-1.15*Erk-1.15*Erk_star+FRET_E*Erk_star)+erk_max*((1+0.15*FRET_E*erk_initial)*Erk+(1-1.15*FRET_E+0.15*FRET_E*erk_initial)*Erk_star))/((erk_max-erk_initial)*(Erk+Erk_star-FRET_E*Erk_star))+r_1*FRET_sigma 
+
+Log Likelihood:
+       fret_measure:	-(fret_measure-(0.15*Erk_star+erk_initial*(-1.15*Erk-1.15*Erk_star+FRET_E*Erk_star)+erk_max*((1+0.15*FRET_E*erk_initial)*Erk+(1-1.15*FRET_E+0.15*FRET_E*erk_initial)*Erk_star))/((erk_max-erk_initial)*(Erk+Erk_star-FRET_E*Erk_star)))^2/(2*FRET_sigma^2)-log(FRET_sigma*sqrt(2*_pi)) 

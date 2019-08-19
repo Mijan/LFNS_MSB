@@ -1,0 +1,4773 @@
+Problem file: /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/../../problem_fgf_sus_3_20.xml
+Output file: /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf.txt
+
+All provided trajectories will be used for the likelihood computation.
+Ode solver settings read from problem file:
+     min step size:	1e-12
+relative tolerance:	1e-10
+absolute tolerance:	1e-10
+Number of Lns particles command line: 
+	1000
+Fractions of particles to be recomputed each iteration read from command line:
+	0
+Number of SMC particles read from command line: 
+	1
+Number of DPGMM iterations read from problem file: 
+	50
+
+		No Alpha value provided (Either through command line '-a' or problem file 'problem.LNS.alpha')! Assume default value of 0.5!
+
+Rejection quantile value read from problem file: 
+	0.05
+If the acceptance rate falls below 0.001 the rejection quantile will be set to 0.2
+
+Lns Tolerance read from problem file: 
+	1e-12
+Print output frequency read from command line:
+	100
+Data for model configuration sus_2-5ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/../../../Yannick_data/fgf_sus/2-5ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+Data for model configuration sus_250ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/../../../Yannick_data/fgf_sus/250ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+Data for model configuration 3_20_2-5ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/../../../Yannick_data/fgf_3_20/2-5ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+Data for model configuration 3_20_250ng:
+	Data file name: /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/../../../Yannick_data/fgf_3_20/250ng_mean_trunc.txt
+	Timepoints: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 69 71 73 75 77 79 81 83 85 87 89 91 93 95 97 99 101 103 105 107 109 111 113 115 117 119 121 123 125 127 129 131 133 135 137 139 141 143 145 147 149 151 153 155 157
+	Number of trajectories: 1
+	Measurement order: fret_measure
+
+       Parameters                  Bounds  Scale
+            k_1_2            [1e-06, 100]    log
+            K_1_2             [1e-06, 10]    log
+            k_2_1            [1e-06, 100]    log
+            K_2_1             [1e-06, 10]    log
+            k_3_4            [1e-06, 100]    log
+            K_3_4             [1e-06, 10]    log
+            K_NFB             [1e-06, 10]    log
+            k_4_3            [1e-06, 100]    log
+            K_4_3             [1e-06, 10]    log
+            k_5_6            [1e-06, 100]    log
+            K_5_6             [1e-06, 10]    log
+            k_6_5            [1e-06, 100]    log
+            K_6_5             [1e-06, 10]    log
+            k_7_8            [1e-06, 100]    log
+            K_7_8             [1e-06, 10]    log
+            k_8_7            [1e-06, 100]    log
+            K_8_7             [1e-06, 10]    log
+            f_1_2            [1e-06, 100]    log
+            F_1_2             [1e-06, 10]    log
+            f_2_1            [1e-06, 100]    log
+            F_2_1             [1e-06, 10]    log
+            h_nfb                [0.5, 6]    log
+        fgf_input              fixed to 0    log
+            r_5_6            [1e-06, 100]    log
+            r_6_5            [1e-06, 100]    log
+            r_5_7            [1e-06, 100]    log
+            r_7_5            [1e-06, 100]    log
+   fgfr_init_mean             [0.0001, 2]    log
+fgfr_init_log_std          fixed to 1e-06    log
+         nfb_init             [0.0001, 2]    log
+      h_init_mean             [0.0001, 2]    log
+   h_init_log_std          fixed to 1e-06    log
+       FRET_sigma           [0.0001, 0.1]    log
+           FRET_E               [0.01, 1]    log
+          erk_max            fixed to 0.8    log
+      erk_initial              fixed to 0    log
+Species names:
+	Ras
+	Ras_star
+	Raf
+	Raf_star
+	Mek
+	Mek_star
+	Erk
+	Erk_star
+	Nfb
+	Nfb_star
+	FgfR
+	H
+	H_F
+	H_F_R
+
+
+##################### MODEL #####################
+
+Ode Model
+Parameters: k_1_2 K_1_2 k_2_1 K_2_1 k_3_4 K_3_4 K_NFB k_4_3 K_4_3 k_5_6 K_5_6 k_6_5 K_6_5 k_7_8 K_7_8 k_8_7 K_8_7 f_1_2 F_1_2 f_2_1 F_2_1 h_nfb fgf_input r_5_6 r_6_5 r_5_7 r_7_5 
+Species: Ras Ras_star Raf Raf_star Mek Mek_star Erk Erk_star Nfb Nfb_star FgfR H H_F H_F_R 
+
+Equations:
+     (d Ras)/dt = -((k_1_2*H_F_R)*(Ras/(K_1_2+Ras)))+(k_2_1*(Ras_star/(K_2_1+Ras_star))) 
+(d Ras_star)/dt = ((k_1_2*H_F_R)*(Ras/(K_1_2+Ras)))-(k_2_1*(Ras_star/(K_2_1+Ras_star))) 
+     (d Raf)/dt = -(k_3_4*Ras_star*(Raf/(K_3_4+Raf))*(K_NFB^h_nfb/(K_NFB^h_nfb+Nfb_star^h_nfb)))+(k_4_3*(Raf_star/(K_4_3+Raf_star))) 
+(d Raf_star)/dt = (k_3_4*Ras_star*(Raf/(K_3_4+Raf))*(K_NFB^h_nfb/(K_NFB^h_nfb+Nfb_star^h_nfb)))-(k_4_3*(Raf_star/(K_4_3+Raf_star))) 
+     (d Mek)/dt = -(k_5_6*Raf_star*(Mek/(K_5_6+Mek)))+(k_6_5*(Mek_star/(K_6_5+Mek_star))) 
+(d Mek_star)/dt = (k_5_6*Raf_star*(Mek/(K_5_6+Mek)))-(k_6_5*(Mek_star/(K_6_5+Mek_star))) 
+     (d Erk)/dt = -(k_7_8*Mek_star*(Erk/(K_7_8+Erk)))+(k_8_7*(Erk_star/(K_8_7+Erk_star))) 
+(d Erk_star)/dt = (k_7_8*Mek_star*(Erk/(K_7_8+Erk)))-(k_8_7*(Erk_star/(K_8_7+Erk_star))) 
+     (d Nfb)/dt = -(f_1_2*Erk_star*(Nfb/(F_1_2+Nfb)))+(f_2_1*(Nfb_star/(F_2_1+Nfb_star))) 
+(d Nfb_star)/dt = (f_1_2*Erk_star*(Nfb/(F_1_2+Nfb)))-(f_2_1*(Nfb_star/(F_2_1+Nfb_star))) 
+    (d FgfR)/dt = -(r_5_7*H_F*FgfR)+(r_7_5*H_F_R) 
+       (d H)/dt = -(r_5_6*H*fgf_input)+(r_6_5*H_F) 
+     (d H_F)/dt = (r_5_6*H*fgf_input)-(r_6_5*H_F)-(r_5_7*H_F*FgfR)+(r_7_5*H_F_R) 
+   (d H_F_R)/dt = (r_5_7*H_F*FgfR)-(r_7_5*H_F_R) 
+
+
+##################### INITIAL VALUES #####################
+
+Parameters: fgfr_init_mean nfb_init h_init_mean 
+Species: Ras Raf Mek Erk FgfR Nfb Ras_star Raf_star Mek_star Erk_star Nfb_star H H_F H_F_R 
+     State Ras:	0.1 
+     State Raf:	0.7 
+     State Mek:	0.68 
+     State Erk:	0.26 
+    State FgfR:	fgfr_init_mean 
+     State Nfb:	nfb_init 
+State Ras_star:	0 
+State Raf_star:	0 
+State Mek_star:	0 
+State Erk_star:	0 
+State Nfb_star:	0 
+       State H:	h_init_mean 
+     State H_F:	0 
+   State H_F_R:	0 
+
+
+##################### MEASUREMENT MODEL #####################
+
+Parameters: FRET_sigma FRET_E erk_max erk_initial 
+Species: Erk Erk_star 
+
+Normal numbers:
+r_1:	mean: 0	std: 1
+
+
+Measurements:
+       fret_measure = (0.15*Erk_star+erk_initial*(-1.15*Erk-1.15*Erk_star+FRET_E*Erk_star)+erk_max*((1+0.15*FRET_E*erk_initial)*Erk+(1-1.15*FRET_E+0.15*FRET_E*erk_initial)*Erk_star))/((erk_max-erk_initial)*(Erk+Erk_star-FRET_E*Erk_star))+r_1*FRET_sigma 
+
+Log Likelihood:
+       fret_measure:	-(fret_measure-(0.15*Erk_star+erk_initial*(-1.15*Erk-1.15*Erk_star+FRET_E*Erk_star)+erk_max*((1+0.15*FRET_E*erk_initial)*Erk+(1-1.15*FRET_E+0.15*FRET_E*erk_initial)*Erk_star))/((erk_max-erk_initial)*(Erk+Erk_star-FRET_E*Erk_star)))^2/(2*FRET_sigma^2)-log(FRET_sigma*sqrt(2*_pi)) 
+
+Starting iteration 1 with log-threshold of -1.79769e+308
+
+i = 100, log likelihood = -7052.66, acceptance probability = 1, time for particle = 0.01, process : 16
+
+
+Particle acceptance rate: 1
+Time needed so far for this iteration: 0.17 seconds
+Estimated time remaining: 1.53 seconds
+
+i = 200, log likelihood = -2042.95, acceptance probability = 1, time for particle = 0.05, process : 17
+
+
+Particle acceptance rate: 1
+Time needed so far for this iteration: 0.29 seconds
+Estimated time remaining: 1.16 seconds
+
+i = 300, log likelihood = -1.26263e+07, acceptance probability = 1, time for particle = 0.02, process : 21
+
+
+Particle acceptance rate: 0.996678
+Time needed so far for this iteration: 0.41 seconds
+Estimated time remaining: 0.956666 seconds
+
+i = 400, log likelihood = -4.52076e+06, acceptance probability = 1, time for particle = 0.03, process : 20
+
+
+Particle acceptance rate: 0.995025
+Time needed so far for this iteration: 0.53 seconds
+Estimated time remaining: 0.795 seconds
+
+i = 500, log likelihood = -3.21996e+06, acceptance probability = 1, time for particle = 0.02, process : 11
+
+
+Particle acceptance rate: 0.996016
+Time needed so far for this iteration: 0.68 seconds
+Estimated time remaining: 0.68 seconds
+
+i = 600, log likelihood = -217684, acceptance probability = 1, time for particle = 0.03, process : 2
+
+
+Particle acceptance rate: 0.993377
+Time needed so far for this iteration: 0.8 seconds
+Estimated time remaining: 0.533333 seconds
+
+i = 700, log likelihood = -103784, acceptance probability = 1, time for particle = 0.03, process : 11
+
+
+Particle acceptance rate: 0.994318
+Time needed so far for this iteration: 0.91 seconds
+Estimated time remaining: 0.39 seconds
+
+i = 800, log likelihood = -2.61313e+06, acceptance probability = 1, time for particle = 0.02, process : 10
+
+
+Particle acceptance rate: 0.993789
+Time needed so far for this iteration: 1.04 seconds
+Estimated time remaining: 0.26 seconds
+
+i = 900, log likelihood = -31669.9, acceptance probability = 1, time for particle = 0.02, process : 20
+
+
+Particle acceptance rate: 0.994475
+Time needed so far for this iteration: 1.14 seconds
+Estimated time remaining: 0.126666 seconds
+
+i = 1000, log likelihood = 354.308, acceptance probability = 1, time for particle = 0.05, process : 1
+
+
+Particle acceptance rate: 0.994036
+Time needed so far for this iteration: 1.27 seconds
+Estimated time remaining: 0 seconds
+
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_1.txt
+
+
+Iteration 1 needed 1.34 seconds
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 2 with log-threshold of -66983.5
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 2, 2, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.65921e-29
+Max Rejection Likelihood:	5.69674e-23
+Median Rejection Likelihood:	3.56727e-25
+Average Rejection Likelihood:	1.96418e-24
+Rejection Constant:	9.50551e-27, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = -1115.03, acceptance probability = 1, time for particle = 0.04, process : 6
+
+
+Particle acceptance rate: 0.892857
+Time needed so far for this iteration: 0.18 seconds
+Estimated time remaining: 0.7236 seconds
+
+i = 200, log likelihood = 261.264, acceptance probability = 1, time for particle = 0.03, process : 17
+
+
+Particle acceptance rate: 0.909091
+Time needed so far for this iteration: 0.31 seconds
+Estimated time remaining: 0.4681 seconds
+
+i = 300, log likelihood = -21975.3, acceptance probability = 1, time for particle = 0.07, process : 20
+
+
+Particle acceptance rate: 0.898204
+Time needed so far for this iteration: 0.48 seconds
+Estimated time remaining: 0.3232 seconds
+
+i = 400, log likelihood = -344.25, acceptance probability = 1, time for particle = 0.03, process : 17
+
+
+Particle acceptance rate: 0.904977
+Time needed so far for this iteration: 0.6 seconds
+Estimated time remaining: 0.153 seconds
+
+i = 500, log likelihood = -1734.71, acceptance probability = 1, time for particle = 0.08, process : 9
+
+
+Particle acceptance rate: 0.886525
+Time needed so far for this iteration: 0.77 seconds
+Estimated time remaining: 0.00308 seconds
+
+
+
+Particle acceptance rate: 0.885362
+Time needed so far for this iteration: 0.78 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 2 needed 1.91 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_2_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_2.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_2_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 3 with log-threshold of -1827.93
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 4, 2, 3, 3, 3, 2, 3, 2, 2, 3, 3, 2, 3, 4, 4, 4, 3, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	6.54519e-29
+Max Rejection Likelihood:	4.12743e-22
+Median Rejection Likelihood:	1.9661e-24
+Average Rejection Likelihood:	1.35539e-23
+Rejection Constant:	3.11488e-26, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 371.894, acceptance probability = 1, time for particle = 0.02, process : 4
+
+
+Particle acceptance rate: 0.862069
+Time needed so far for this iteration: 0.3 seconds
+Estimated time remaining: 1.206 seconds
+
+i = 200, log likelihood = -779.036, acceptance probability = 1, time for particle = 0.03, process : 21
+
+
+Particle acceptance rate: 0.869565
+Time needed so far for this iteration: 0.32 seconds
+Estimated time remaining: 0.4832 seconds
+
+i = 300, log likelihood = 358.003, acceptance probability = 1, time for particle = 0.03, process : 20
+
+
+Particle acceptance rate: 0.884956
+Time needed so far for this iteration: 0.47 seconds
+Estimated time remaining: 0.316466 seconds
+
+i = 400, log likelihood = 374.631, acceptance probability = 1, time for particle = 0.09, process : 11
+
+
+Particle acceptance rate: 0.879121
+Time needed so far for this iteration: 0.62 seconds
+Estimated time remaining: 0.1581 seconds
+
+i = 500, log likelihood = -1493.32, acceptance probability = 0.5, time for particle = 0.03, process : 9
+
+
+Particle acceptance rate: 0.886525
+Time needed so far for this iteration: 0.77 seconds
+Estimated time remaining: 0.00308 seconds
+
+
+
+Particle acceptance rate: 0.886926
+Time needed so far for this iteration: 0.77 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 3 needed 1.98 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_3_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_3.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_3_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 4 with log-threshold of 175.119
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 3, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.83508e-27
+Max Rejection Likelihood:	1.00774e-20
+Median Rejection Likelihood:	8.33578e-24
+Average Rejection Likelihood:	7.82386e-23
+Rejection Constant:	1.2599e-25, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 205.973, acceptance probability = 1, time for particle = 0.02, process : 20
+
+
+Particle acceptance rate: 0.869565
+Time needed so far for this iteration: 0.22 seconds
+Estimated time remaining: 0.8844 seconds
+
+i = 200, log likelihood = 374.169, acceptance probability = 0.5, time for particle = 0.07, process : 20
+
+
+Particle acceptance rate: 0.873362
+Time needed so far for this iteration: 0.36 seconds
+Estimated time remaining: 0.5436 seconds
+
+i = 300, log likelihood = 317.293, acceptance probability = 1, time for particle = 0.03, process : 8
+
+
+Particle acceptance rate: 0.867052
+Time needed so far for this iteration: 0.48 seconds
+Estimated time remaining: 0.3232 seconds
+
+i = 400, log likelihood = 362.312, acceptance probability = 1, time for particle = 0.04, process : 13
+
+
+Particle acceptance rate: 0.862069
+Time needed so far for this iteration: 0.64 seconds
+Estimated time remaining: 0.1632 seconds
+
+i = 500, log likelihood = 356.028, acceptance probability = 1, time for particle = 0.03, process : 12
+
+
+Particle acceptance rate: 0.863558
+Time needed so far for this iteration: 0.8 seconds
+Estimated time remaining: 0.0032 seconds
+
+
+
+Particle acceptance rate: 0.864028
+Time needed so far for this iteration: 0.8 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 4 needed 2 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_4_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_4.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_4_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 5 with log-threshold of 356.945
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 3, 2, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 3, 3, 3, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.05069e-27
+Max Rejection Likelihood:	1.80763e-20
+Median Rejection Likelihood:	3.16916e-23
+Average Rejection Likelihood:	3.58718e-22
+Rejection Constant:	3.79281e-25, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 361.554, acceptance probability = 1, time for particle = 0.02, process : 7
+
+
+Particle acceptance rate: 0.900901
+Time needed so far for this iteration: 0.19 seconds
+Estimated time remaining: 0.7638 seconds
+
+i = 200, log likelihood = 358.016, acceptance probability = 1, time for particle = 0.02, process : 15
+
+
+Particle acceptance rate: 0.888889
+Time needed so far for this iteration: 0.35 seconds
+Estimated time remaining: 0.5285 seconds
+
+i = 300, log likelihood = 374.107, acceptance probability = 1, time for particle = 0.04, process : 14
+
+
+Particle acceptance rate: 0.874636
+Time needed so far for this iteration: 0.53 seconds
+Estimated time remaining: 0.356866 seconds
+
+i = 400, log likelihood = 374.477, acceptance probability = 1, time for particle = 0.04, process : 2
+
+
+Particle acceptance rate: 0.867679
+Time needed so far for this iteration: 0.69 seconds
+Estimated time remaining: 0.17595 seconds
+
+i = 500, log likelihood = 366.552, acceptance probability = 1, time for particle = 0.02, process : 19
+
+
+Particle acceptance rate: 0.868056
+Time needed so far for this iteration: 0.81 seconds
+Estimated time remaining: 0.00324 seconds
+
+
+
+Particle acceptance rate: 0.868512
+Time needed so far for this iteration: 0.81 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 5 needed 2.04 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_5_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_5.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_5_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 6 with log-threshold of 371.096
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 1, 2, 2, 1, 1, 1, 1, 1, 1, 2, 3, 3, 3, 5, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.79504e-26
+Max Rejection Likelihood:	6.52504e-20
+Median Rejection Likelihood:	8.66659e-23
+Average Rejection Likelihood:	8.68473e-22
+Rejection Constant:	8.63335e-25, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 373.472, acceptance probability = 1, time for particle = 0.04, process : 20
+
+
+Particle acceptance rate: 0.826446
+Time needed so far for this iteration: 0.21 seconds
+Estimated time remaining: 0.8442 seconds
+
+i = 200, log likelihood = 374.443, acceptance probability = 1, time for particle = 0.05, process : 14
+
+
+Particle acceptance rate: 0.796813
+Time needed so far for this iteration: 0.38 seconds
+Estimated time remaining: 0.5738 seconds
+
+i = 300, log likelihood = 374.31, acceptance probability = 1, time for particle = 0.04, process : 13
+
+
+Particle acceptance rate: 0.78125
+Time needed so far for this iteration: 0.56 seconds
+Estimated time remaining: 0.377066 seconds
+
+i = 400, log likelihood = 374.438, acceptance probability = 1, time for particle = 0.05, process : 23
+
+
+Particle acceptance rate: 0.772201
+Time needed so far for this iteration: 0.75 seconds
+Estimated time remaining: 0.19125 seconds
+
+i = 500, log likelihood = 374.547, acceptance probability = 1, time for particle = 0.02, process : 6
+
+
+Particle acceptance rate: 0.78125
+Time needed so far for this iteration: 0.88 seconds
+Estimated time remaining: 0.00352 seconds
+
+
+
+Particle acceptance rate: 0.780715
+Time needed so far for this iteration: 0.91 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 6 needed 2.17 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_6_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_6.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_6_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 7 with log-threshold of 373.937
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.61631e-27
+Max Rejection Likelihood:	1.27617e-19
+Median Rejection Likelihood:	2.29941e-22
+Average Rejection Likelihood:	2.71e-21
+Rejection Constant:	2.59707e-24, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 374.211, acceptance probability = 1, time for particle = 0.04, process : 22
+
+
+Particle acceptance rate: 0.806452
+Time needed so far for this iteration: 0.25 seconds
+Estimated time remaining: 1.005 seconds
+
+i = 200, log likelihood = 374.245, acceptance probability = 1, time for particle = 0.03, process : 20
+
+
+Particle acceptance rate: 0.743494
+Time needed so far for this iteration: 0.44 seconds
+Estimated time remaining: 0.6644 seconds
+
+i = 300, log likelihood = 374.237, acceptance probability = 1, time for particle = 0.04, process : 20
+
+
+Particle acceptance rate: 0.767263
+Time needed so far for this iteration: 0.58 seconds
+Estimated time remaining: 0.390533 seconds
+
+i = 400, log likelihood = 374.637, acceptance probability = 1, time for particle = 0.03, process : 13
+
+
+Particle acceptance rate: 0.776699
+Time needed so far for this iteration: 0.76 seconds
+Estimated time remaining: 0.1938 seconds
+
+i = 500, log likelihood = 374.325, acceptance probability = 1, time for particle = 0.03, process : 10
+
+
+Particle acceptance rate: 0.762195
+Time needed so far for this iteration: 0.96 seconds
+Estimated time remaining: 0.00384 seconds
+
+
+
+Particle acceptance rate: 0.76176
+Time needed so far for this iteration: 0.96 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 7 needed 2.13 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_7_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_7.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_7_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 8 with log-threshold of 374.496
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.86804e-26
+Max Rejection Likelihood:	4.93427e-19
+Median Rejection Likelihood:	6.21299e-22
+Average Rejection Likelihood:	6.52261e-21
+Rejection Constant:	6.96513e-24, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 374.631, acceptance probability = 1, time for particle = 0.08, process : 4
+
+
+Particle acceptance rate: 0.729927
+Time needed so far for this iteration: 0.24 seconds
+Estimated time remaining: 0.9648 seconds
+
+i = 200, log likelihood = 374.647, acceptance probability = 0.5, time for particle = 0.02, process : 15
+
+
+Particle acceptance rate: 0.735294
+Time needed so far for this iteration: 0.41 seconds
+Estimated time remaining: 0.6191 seconds
+
+i = 300, log likelihood = 374.632, acceptance probability = 1, time for particle = 0.04, process : 8
+
+
+Particle acceptance rate: 0.742574
+Time needed so far for this iteration: 0.58 seconds
+Estimated time remaining: 0.390533 seconds
+
+i = 400, log likelihood = 374.64, acceptance probability = 1, time for particle = 0.02, process : 20
+
+
+Particle acceptance rate: 0.757576
+Time needed so far for this iteration: 0.74 seconds
+Estimated time remaining: 0.1887 seconds
+
+i = 500, log likelihood = 374.507, acceptance probability = 1, time for particle = 0.02, process : 12
+
+
+Particle acceptance rate: 0.761035
+Time needed so far for this iteration: 0.99 seconds
+Estimated time remaining: 0.00396 seconds
+
+
+
+Particle acceptance rate: 0.754887
+Time needed so far for this iteration: 1.05 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 8 needed 2.19 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_8_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_8.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_8_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 9 with log-threshold of 374.619
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.73358e-26
+Max Rejection Likelihood:	2.81941e-18
+Median Rejection Likelihood:	1.68697e-21
+Average Rejection Likelihood:	2.63762e-20
+Rejection Constant:	1.02124e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 374.625, acceptance probability = 1, time for particle = 0.03, process : 1
+
+
+Particle acceptance rate: 0.671141
+Time needed so far for this iteration: 0.26 seconds
+Estimated time remaining: 1.0452 seconds
+
+i = 200, log likelihood = 374.641, acceptance probability = 0.5, time for particle = 0.04, process : 10
+
+
+Particle acceptance rate: 0.666667
+Time needed so far for this iteration: 0.51 seconds
+Estimated time remaining: 0.7701 seconds
+
+i = 300, log likelihood = 374.634, acceptance probability = 0.2, time for particle = 0.02, process : 16
+
+
+Particle acceptance rate: 0.675676
+Time needed so far for this iteration: 0.73 seconds
+Estimated time remaining: 0.491533 seconds
+
+i = 400, log likelihood = 374.629, acceptance probability = 1, time for particle = 0.02, process : 3
+
+
+Particle acceptance rate: 0.687285
+Time needed so far for this iteration: 0.82 seconds
+Estimated time remaining: 0.2091 seconds
+
+i = 500, log likelihood = 374.629, acceptance probability = 0.5, time for particle = 0.05, process : 13
+
+
+Particle acceptance rate: 0.688705
+Time needed so far for this iteration: 1.02 seconds
+Estimated time remaining: 0.00408 seconds
+
+
+
+Particle acceptance rate: 0.688615
+Time needed so far for this iteration: 1.02 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 9 needed 2.19 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_9_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_9.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_9_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 10 with log-threshold of 374.643
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 3, 3, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.45302e-26
+Max Rejection Likelihood:	2.77123e-18
+Median Rejection Likelihood:	2.21061e-21
+Average Rejection Likelihood:	2.92874e-20
+Rejection Constant:	2.03089e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 374.648, acceptance probability = 1, time for particle = 0.14, process : 17
+
+
+Particle acceptance rate: 0.70922
+Time needed so far for this iteration: 0.28 seconds
+Estimated time remaining: 1.1256 seconds
+
+i = 200, log likelihood = 374.66, acceptance probability = 1, time for particle = 0.05, process : 17
+
+
+Particle acceptance rate: 0.660066
+Time needed so far for this iteration: 0.49 seconds
+Estimated time remaining: 0.7399 seconds
+
+i = 300, log likelihood = 374.644, acceptance probability = 0.25, time for particle = 0.1, process : 10
+
+
+Particle acceptance rate: 0.680272
+Time needed so far for this iteration: 0.69 seconds
+Estimated time remaining: 0.4646 seconds
+
+i = 400, log likelihood = 374.649, acceptance probability = 1, time for particle = 0.03, process : 12
+
+
+Particle acceptance rate: 0.675676
+Time needed so far for this iteration: 0.86 seconds
+Estimated time remaining: 0.2193 seconds
+
+i = 500, log likelihood = 374.648, acceptance probability = 1, time for particle = 0.02, process : 8
+
+
+Particle acceptance rate: 0.671141
+Time needed so far for this iteration: 1.13 seconds
+Estimated time remaining: 0.00452 seconds
+
+
+
+Particle acceptance rate: 0.671123
+Time needed so far for this iteration: 1.13 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 10 needed 2.25 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_10_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_10.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_10_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 11 with log-threshold of 374.648
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+4, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.48689e-25
+Max Rejection Likelihood:	7.8486e-18
+Median Rejection Likelihood:	6.19114e-21
+Average Rejection Likelihood:	8.66359e-20
+Rejection Constant:	4.14072e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 392.1, acceptance probability = 0.5, time for particle = 0.03, process : 22
+
+
+Particle acceptance rate: 0.543478
+Time needed so far for this iteration: 0.32 seconds
+Estimated time remaining: 1.2864 seconds
+
+i = 200, log likelihood = 374.649, acceptance probability = 0.333333, time for particle = 0.02, process : 17
+
+
+Particle acceptance rate: 0.561798
+Time needed so far for this iteration: 0.59 seconds
+Estimated time remaining: 0.8909 seconds
+
+i = 300, log likelihood = 374.649, acceptance probability = 1, time for particle = 0.08, process : 16
+
+
+Particle acceptance rate: 0.579151
+Time needed so far for this iteration: 0.84 seconds
+Estimated time remaining: 0.5656 seconds
+
+i = 400, log likelihood = 374.649, acceptance probability = 1, time for particle = 0.02, process : 16
+
+
+Particle acceptance rate: 0.584795
+Time needed so far for this iteration: 1.2 seconds
+Estimated time remaining: 0.306 seconds
+
+i = 500, log likelihood = 374.649, acceptance probability = 0.5, time for particle = 0.07, process : 4
+
+
+Particle acceptance rate: 0.565611
+Time needed so far for this iteration: 1.32 seconds
+Estimated time remaining: 0.00528 seconds
+
+
+
+Particle acceptance rate: 0.564679
+Time needed so far for this iteration: 1.32 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 11 needed 2.45 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_11_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_11.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_11_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 12 with log-threshold of 374.649
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 3, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.3103e-25
+Max Rejection Likelihood:	1.68031e-17
+Median Rejection Likelihood:	8.62552e-21
+Average Rejection Likelihood:	1.27825e-19
+Rejection Constant:	4.85367e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 374.649, acceptance probability = 1, time for particle = 0.03, process : 20
+
+
+Particle acceptance rate: 0.316456
+Time needed so far for this iteration: 0.78 seconds
+Estimated time remaining: 3.1356 seconds
+
+i = 200, log likelihood = 374.788, acceptance probability = 1, time for particle = 0.16, process : 16
+
+
+Particle acceptance rate: 0.33389
+Time needed so far for this iteration: 1.19 seconds
+Estimated time remaining: 1.7969 seconds
+
+i = 300, log likelihood = 374.649, acceptance probability = 0.5, time for particle = 0.05, process : 7
+
+
+Particle acceptance rate: 0.318134
+Time needed so far for this iteration: 1.75 seconds
+Estimated time remaining: 1.17833 seconds
+
+i = 400, log likelihood = 374.725, acceptance probability = 1, time for particle = 0.06, process : 13
+
+
+Particle acceptance rate: 0.310318
+Time needed so far for this iteration: 2.21 seconds
+Estimated time remaining: 0.56355 seconds
+
+i = 500, log likelihood = 375.639, acceptance probability = 0.1, time for particle = 0.05, process : 4
+
+
+Particle acceptance rate: 0.310366
+Time needed so far for this iteration: 2.9 seconds
+Estimated time remaining: 0.0116 seconds
+
+
+
+Particle acceptance rate: 0.309304
+Time needed so far for this iteration: 2.9 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 12 needed 3.98 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_12_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_12.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_12_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 13 with log-threshold of 374.649
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.73634e-25
+Max Rejection Likelihood:	1.91082e-17
+Median Rejection Likelihood:	7.72046e-21
+Average Rejection Likelihood:	2.0681e-19
+Rejection Constant:	4.38368e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 374.653, acceptance probability = 0.05, time for particle = 0.13, process : 8
+
+
+Particle acceptance rate: 0.20202
+Time needed so far for this iteration: 1.4 seconds
+Estimated time remaining: 5.628 seconds
+
+i = 200, log likelihood = 374.649, acceptance probability = 0.125, time for particle = 0.52, process : 12
+
+
+Particle acceptance rate: 0.203666
+Time needed so far for this iteration: 2.15 seconds
+Estimated time remaining: 3.2465 seconds
+
+i = 300, log likelihood = 404.53, acceptance probability = 0.5, time for particle = 0.15, process : 22
+
+
+Particle acceptance rate: 0.200401
+Time needed so far for this iteration: 2.99 seconds
+Estimated time remaining: 2.01327 seconds
+
+i = 400, log likelihood = 377.204, acceptance probability = 0.2, time for particle = 0.08, process : 6
+
+
+Particle acceptance rate: 0.206505
+Time needed so far for this iteration: 3.66 seconds
+Estimated time remaining: 0.9333 seconds
+
+i = 500, log likelihood = 381.256, acceptance probability = 0.25, time for particle = 0.07, process : 23
+
+
+Particle acceptance rate: 0.207383
+Time needed so far for this iteration: 4.28 seconds
+Estimated time remaining: 0.01712 seconds
+
+
+
+Particle acceptance rate: 0.207181
+Time needed so far for this iteration: 4.28 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 13 needed 5.49 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_13_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_13.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_13_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 14 with log-threshold of 374.909
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 2, 2, 1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.29198e-25
+Max Rejection Likelihood:	5.92688e-18
+Median Rejection Likelihood:	8.78014e-21
+Average Rejection Likelihood:	1.08112e-19
+Rejection Constant:	7.16125e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 449.346, acceptance probability = 0.5, time for particle = 0.39, process : 21
+
+
+Particle acceptance rate: 0.31746
+Time needed so far for this iteration: 1.5 seconds
+Estimated time remaining: 6.03 seconds
+
+i = 200, log likelihood = 421.036, acceptance probability = 0.142857, time for particle = 0.05, process : 23
+
+
+Particle acceptance rate: 0.30722
+Time needed so far for this iteration: 1.51 seconds
+Estimated time remaining: 2.2801 seconds
+
+i = 300, log likelihood = 392.491, acceptance probability = 0.5, time for particle = 0.08, process : 4
+
+
+Particle acceptance rate: 0.310238
+Time needed so far for this iteration: 2.23 seconds
+Estimated time remaining: 1.50153 seconds
+
+i = 400, log likelihood = 375.377, acceptance probability = 0.5, time for particle = 0.03, process : 2
+
+
+Particle acceptance rate: 0.305344
+Time needed so far for this iteration: 3 seconds
+Estimated time remaining: 0.765 seconds
+
+i = 500, log likelihood = 393.263, acceptance probability = 0.2, time for particle = 0.06, process : 18
+
+
+Particle acceptance rate: 0.313283
+Time needed so far for this iteration: 3.48 seconds
+Estimated time remaining: 0.01392 seconds
+
+
+
+Particle acceptance rate: 0.311608
+Time needed so far for this iteration: 3.73 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 14 needed 4.9 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_14_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_14.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_14_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 15 with log-threshold of 382.31
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.25653e-25
+Max Rejection Likelihood:	1.11841e-17
+Median Rejection Likelihood:	1.32941e-20
+Average Rejection Likelihood:	2.02259e-19
+Rejection Constant:	6.72764e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 388.91, acceptance probability = 0.125, time for particle = 0.1, process : 19
+
+
+Particle acceptance rate: 0.210084
+Time needed so far for this iteration: 1.62 seconds
+Estimated time remaining: 6.5124 seconds
+
+i = 200, log likelihood = 389.509, acceptance probability = 0.5, time for particle = 0.04, process : 20
+
+
+Particle acceptance rate: 0.222965
+Time needed so far for this iteration: 2.22 seconds
+Estimated time remaining: 3.3522 seconds
+
+i = 300, log likelihood = 451.256, acceptance probability = 0.5, time for particle = 0.11, process : 14
+
+
+Particle acceptance rate: 0.212164
+Time needed so far for this iteration: 4.31 seconds
+Estimated time remaining: 2.90207 seconds
+
+i = 400, log likelihood = 383.73, acceptance probability = 0.2, time for particle = 0.18, process : 23
+
+
+Particle acceptance rate: 0.216685
+Time needed so far for this iteration: 4.31 seconds
+Estimated time remaining: 1.09905 seconds
+
+i = 500, log likelihood = 446.742, acceptance probability = 0.166667, time for particle = 0.06, process : 21
+
+
+Particle acceptance rate: 0.21901
+Time needed so far for this iteration: 5.42 seconds
+Estimated time remaining: 0.02168 seconds
+
+
+
+Particle acceptance rate: 0.218451
+Time needed so far for this iteration: 5.42 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 15 needed 7.29 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_15_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_15.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_15_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 16 with log-threshold of 403.791
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.55312e-25
+Max Rejection Likelihood:	6.18525e-17
+Median Rejection Likelihood:	1.14013e-20
+Average Rejection Likelihood:	2.00798e-19
+Rejection Constant:	8.14489e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 404.425, acceptance probability = 0.5, time for particle = 0.58, process : 22
+
+
+Particle acceptance rate: 0.138122
+Time needed so far for this iteration: 2.79 seconds
+Estimated time remaining: 11.2158 seconds
+
+i = 200, log likelihood = 404.594, acceptance probability = 0.166667, time for particle = 0.4, process : 5
+
+
+Particle acceptance rate: 0.139082
+Time needed so far for this iteration: 4.95 seconds
+Estimated time remaining: 7.4745 seconds
+
+i = 300, log likelihood = 436.429, acceptance probability = 0.5, time for particle = 0.09, process : 15
+
+
+Particle acceptance rate: 0.132802
+Time needed so far for this iteration: 5.57 seconds
+Estimated time remaining: 3.75047 seconds
+
+i = 400, log likelihood = 474.424, acceptance probability = 0.0714286, time for particle = 0.2, process : 4
+
+
+Particle acceptance rate: 0.127796
+Time needed so far for this iteration: 8.9 seconds
+Estimated time remaining: 2.2695 seconds
+
+i = 500, log likelihood = 451.317, acceptance probability = 1, time for particle = 0.06, process : 16
+
+
+Particle acceptance rate: 0.13113
+Time needed so far for this iteration: 9.01 seconds
+Estimated time remaining: 0.03604 seconds
+
+
+
+Particle acceptance rate: 0.131242
+Time needed so far for this iteration: 9.01 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 16 needed 10.8 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_16_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_16.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_16_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 17 with log-threshold of 430.735
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.23848e-25
+Max Rejection Likelihood:	1.31919e-17
+Median Rejection Likelihood:	1.24841e-20
+Average Rejection Likelihood:	1.80435e-19
+Rejection Constant:	1.17363e-22, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 457.528, acceptance probability = 0.0625, time for particle = 0.55, process : 8
+
+
+Particle acceptance rate: 0.0892061
+Time needed so far for this iteration: 4.3 seconds
+Estimated time remaining: 17.286 seconds
+
+i = 200, log likelihood = 435.493, acceptance probability = 0.125, time for particle = 0.44, process : 11
+
+
+Particle acceptance rate: 0.0897263
+Time needed so far for this iteration: 6.54 seconds
+Estimated time remaining: 9.8754 seconds
+
+i = 300, log likelihood = 439.822, acceptance probability = 0.0909091, time for particle = 0.7, process : 16
+
+
+Particle acceptance rate: 0.090036
+Time needed so far for this iteration: 9.62 seconds
+Estimated time remaining: 6.47747 seconds
+
+i = 400, log likelihood = 437.661, acceptance probability = 0.142857, time for particle = 0.47, process : 3
+
+
+Particle acceptance rate: 0.0887311
+Time needed so far for this iteration: 12.92 seconds
+Estimated time remaining: 3.2946 seconds
+
+i = 500, log likelihood = 476.668, acceptance probability = 0.03125, time for particle = 0.48, process : 10
+
+
+Particle acceptance rate: 0.0857486
+Time needed so far for this iteration: 16.47 seconds
+Estimated time remaining: 0.06588 seconds
+
+
+
+Particle acceptance rate: 0.085724
+Time needed so far for this iteration: 16.47 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 17 needed 18.3 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_17_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_17.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_17_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 18 with log-threshold of 452.6
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.45777e-24
+Max Rejection Likelihood:	5.10091e-17
+Median Rejection Likelihood:	2.13932e-20
+Average Rejection Likelihood:	3.91304e-19
+Rejection Constant:	9.2479e-23, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 510.423, acceptance probability = 0.111111, time for particle = 1.99, process : 23
+
+
+Particle acceptance rate: 0.070373
+Time needed so far for this iteration: 4.53 seconds
+Estimated time remaining: 18.2106 seconds
+
+i = 200, log likelihood = 477.237, acceptance probability = 0.0526316, time for particle = 0.91, process : 20
+
+
+Particle acceptance rate: 0.0643087
+Time needed so far for this iteration: 9.69 seconds
+Estimated time remaining: 14.6319 seconds
+
+i = 300, log likelihood = 463.231, acceptance probability = 0.333333, time for particle = 1.67, process : 10
+
+
+Particle acceptance rate: 0.0696217
+Time needed so far for this iteration: 12.01 seconds
+Estimated time remaining: 8.08673 seconds
+
+i = 400, log likelihood = 486.055, acceptance probability = 0.0833333, time for particle = 0.5, process : 23
+
+
+Particle acceptance rate: 0.0686695
+Time needed so far for this iteration: 16.32 seconds
+Estimated time remaining: 4.1616 seconds
+
+i = 500, log likelihood = 467.909, acceptance probability = 0.111111, time for particle = 0.57, process : 18
+
+
+Particle acceptance rate: 0.0666844
+Time needed so far for this iteration: 19.36 seconds
+Estimated time remaining: 0.07744 seconds
+
+
+
+Particle acceptance rate: 0.0666313
+Time needed so far for this iteration: 19.36 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 18 needed 21.05 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_18_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_18.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_18_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 19 with log-threshold of 473.822
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.63744e-25
+Max Rejection Likelihood:	3.43077e-17
+Median Rejection Likelihood:	2.49256e-20
+Average Rejection Likelihood:	3.38858e-19
+Rejection Constant:	1.73774e-22, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 491.365, acceptance probability = 0.5, time for particle = 0.28, process : 15
+
+
+Particle acceptance rate: 0.0533049
+Time needed so far for this iteration: 7.74 seconds
+Estimated time remaining: 31.1148 seconds
+
+i = 200, log likelihood = 478.461, acceptance probability = 0.0526316, time for particle = 0.51, process : 17
+
+
+Particle acceptance rate: 0.0445038
+Time needed so far for this iteration: 13.71 seconds
+Estimated time remaining: 20.7021 seconds
+
+i = 300, log likelihood = 498.879, acceptance probability = 0.0454545, time for particle = 0.23, process : 9
+
+
+Particle acceptance rate: 0.0486855
+Time needed so far for this iteration: 15.93 seconds
+Estimated time remaining: 10.7262 seconds
+
+i = 400, log likelihood = 518.776, acceptance probability = 0.03125, time for particle = 0.22, process : 23
+
+
+Particle acceptance rate: 0.0507035
+Time needed so far for this iteration: 21.02 seconds
+Estimated time remaining: 5.3601 seconds
+
+i = 500, log likelihood = 478.75, acceptance probability = 0.1, time for particle = 1.14, process : 3
+
+
+Particle acceptance rate: 0.052378
+Time needed so far for this iteration: 25.65 seconds
+Estimated time remaining: 0.1026 seconds
+
+
+
+Particle acceptance rate: 0.0525214
+Time needed so far for this iteration: 25.65 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 19 needed 27.47 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_19_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_19.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_19_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 20 with log-threshold of 493.282
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.12402e-24
+Max Rejection Likelihood:	3.65633e-17
+Median Rejection Likelihood:	3.66177e-20
+Average Rejection Likelihood:	4.82673e-19
+Rejection Constant:	2.02847e-22, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 547.835, acceptance probability = 0.0344828, time for particle = 0.81, process : 6
+
+
+Particle acceptance rate: 0.0495786
+Time needed so far for this iteration: 8.27 seconds
+Estimated time remaining: 33.2454 seconds
+
+i = 200, log likelihood = 499.983, acceptance probability = 0.5, time for particle = 0.25, process : 17
+
+
+Particle acceptance rate: 0.0477099
+Time needed so far for this iteration: 14.7 seconds
+Estimated time remaining: 22.197 seconds
+
+i = 300, log likelihood = 526.64, acceptance probability = 0.0526316, time for particle = 1.31, process : 22
+
+
+Particle acceptance rate: 0.0467727
+Time needed so far for this iteration: 18.38 seconds
+Estimated time remaining: 12.3759 seconds
+
+i = 400, log likelihood = 509.116, acceptance probability = 0.037037, time for particle = 0.08, process : 10
+
+
+Particle acceptance rate: 0.0477213
+Time needed so far for this iteration: 22.7 seconds
+Estimated time remaining: 5.7885 seconds
+
+i = 500, log likelihood = 519.244, acceptance probability = 0.0769231, time for particle = 0.43, process : 9
+
+
+Particle acceptance rate: 0.0479157
+Time needed so far for this iteration: 27.41 seconds
+Estimated time remaining: 0.10964 seconds
+
+
+
+Particle acceptance rate: 0.0480843
+Time needed so far for this iteration: 27.41 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 20 needed 29.11 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_20_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_20.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_20_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 21 with log-threshold of 510.099
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.11101e-24
+Max Rejection Likelihood:	3.2273e-17
+Median Rejection Likelihood:	4.78292e-20
+Average Rejection Likelihood:	6.27631e-19
+Rejection Constant:	5.02172e-22, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 546.059, acceptance probability = 0.0384615, time for particle = 0.82, process : 1
+
+
+Particle acceptance rate: 0.0436491
+Time needed so far for this iteration: 7.4 seconds
+Estimated time remaining: 29.748 seconds
+
+i = 200, log likelihood = 518.639, acceptance probability = 0.25, time for particle = 1.45, process : 22
+
+
+Particle acceptance rate: 0.0469043
+Time needed so far for this iteration: 12.4 seconds
+Estimated time remaining: 18.724 seconds
+
+i = 300, log likelihood = 510.532, acceptance probability = 0.0196078, time for particle = 0.67, process : 5
+
+
+Particle acceptance rate: 0.045683
+Time needed so far for this iteration: 18.83 seconds
+Estimated time remaining: 12.6789 seconds
+
+i = 400, log likelihood = 536.715, acceptance probability = 0.0294118, time for particle = 0.34, process : 4
+
+
+Particle acceptance rate: 0.0477783
+Time needed so far for this iteration: 22.62 seconds
+Estimated time remaining: 5.7681 seconds
+
+i = 500, log likelihood = 521.827, acceptance probability = 0.125, time for particle = 2.1, process : 3
+
+
+Particle acceptance rate: 0.0484543
+Time needed so far for this iteration: 28.76 seconds
+Estimated time remaining: 0.11504 seconds
+
+
+
+Particle acceptance rate: 0.0484509
+Time needed so far for this iteration: 28.76 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 21 needed 29.99 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_21_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_21.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_21_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 22 with log-threshold of 524.983
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 2, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.10541e-25
+Max Rejection Likelihood:	2.72472e-16
+Median Rejection Likelihood:	7.7258e-20
+Average Rejection Likelihood:	1.5805e-18
+Rejection Constant:	4.57651e-22, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 538.906, acceptance probability = 0.05, time for particle = 1.11, process : 6
+
+
+Particle acceptance rate: 0.0455373
+Time needed so far for this iteration: 9.32 seconds
+Estimated time remaining: 37.4664 seconds
+
+i = 200, log likelihood = 526.109, acceptance probability = 0.142857, time for particle = 0.47, process : 16
+
+
+Particle acceptance rate: 0.0430385
+Time needed so far for this iteration: 15.61 seconds
+Estimated time remaining: 23.5711 seconds
+
+i = 300, log likelihood = 526.552, acceptance probability = 0.0666667, time for particle = 0.44, process : 22
+
+
+Particle acceptance rate: 0.0441501
+Time needed so far for this iteration: 22.62 seconds
+Estimated time remaining: 15.2308 seconds
+
+i = 400, log likelihood = 542.644, acceptance probability = 0.166667, time for particle = 0.39, process : 11
+
+
+Particle acceptance rate: 0.0441989
+Time needed so far for this iteration: 24.26 seconds
+Estimated time remaining: 6.1863 seconds
+
+i = 500, log likelihood = 535.498, acceptance probability = 0.04, time for particle = 0.06, process : 15
+
+
+Particle acceptance rate: 0.0440335
+Time needed so far for this iteration: 32.8 seconds
+Estimated time remaining: 0.1312 seconds
+
+
+
+Particle acceptance rate: 0.0438045
+Time needed so far for this iteration: 32.89 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 22 needed 35.87 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_22_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_22.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_22_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 23 with log-threshold of 540.118
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	9.84418e-24
+Max Rejection Likelihood:	1.81137e-16
+Median Rejection Likelihood:	1.49218e-19
+Average Rejection Likelihood:	2.13525e-18
+Rejection Constant:	8.93821e-22, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 569.16, acceptance probability = 0.166667, time for particle = 1.06, process : 7
+
+
+Particle acceptance rate: 0.0675219
+Time needed so far for this iteration: 8.14 seconds
+Estimated time remaining: 32.7228 seconds
+
+i = 200, log likelihood = 554.078, acceptance probability = 0.0185185, time for particle = 0.32, process : 9
+
+
+Particle acceptance rate: 0.0649984
+Time needed so far for this iteration: 10.12 seconds
+Estimated time remaining: 15.2812 seconds
+
+i = 300, log likelihood = 591.71, acceptance probability = 0.0333333, time for particle = 0.26, process : 9
+
+
+Particle acceptance rate: 0.0658039
+Time needed so far for this iteration: 13.66 seconds
+Estimated time remaining: 9.19773 seconds
+
+i = 400, log likelihood = 550.836, acceptance probability = 0.142857, time for particle = 0.67, process : 17
+
+
+Particle acceptance rate: 0.0597015
+Time needed so far for this iteration: 19.93 seconds
+Estimated time remaining: 5.08215 seconds
+
+i = 500, log likelihood = 589.142, acceptance probability = 0.5, time for particle = 0.16, process : 18
+
+
+Particle acceptance rate: 0.061267
+Time needed so far for this iteration: 23.27 seconds
+Estimated time remaining: 0.09308 seconds
+
+
+
+Particle acceptance rate: 0.0614218
+Time needed so far for this iteration: 23.27 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 23 needed 26 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_23_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_23.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_23_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 24 with log-threshold of 556.146
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	9.85501e-24
+Max Rejection Likelihood:	3.70441e-16
+Median Rejection Likelihood:	3.5355e-19
+Average Rejection Likelihood:	4.96312e-18
+Rejection Constant:	1.19399e-21, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 565.919, acceptance probability = 0.0526316, time for particle = 0.35, process : 5
+
+
+Particle acceptance rate: 0.0743494
+Time needed so far for this iteration: 6.13 seconds
+Estimated time remaining: 24.6426 seconds
+
+i = 200, log likelihood = 568.668, acceptance probability = 0.0526316, time for particle = 0.66, process : 6
+
+
+Particle acceptance rate: 0.0774593
+Time needed so far for this iteration: 8.72 seconds
+Estimated time remaining: 13.1672 seconds
+
+i = 300, log likelihood = 598.685, acceptance probability = 0.0666667, time for particle = 0.07, process : 6
+
+
+Particle acceptance rate: 0.0760264
+Time needed so far for this iteration: 12.34 seconds
+Estimated time remaining: 8.30893 seconds
+
+i = 400, log likelihood = 580.053, acceptance probability = 0.0588235, time for particle = 1.22, process : 12
+
+
+Particle acceptance rate: 0.0789578
+Time needed so far for this iteration: 15.18 seconds
+Estimated time remaining: 3.8709 seconds
+
+i = 500, log likelihood = 580.849, acceptance probability = 0.333333, time for particle = 0.4, process : 8
+
+
+Particle acceptance rate: 0.0778816
+Time needed so far for this iteration: 18.52 seconds
+Estimated time remaining: 0.07408 seconds
+
+
+
+Particle acceptance rate: 0.0777933
+Time needed so far for this iteration: 18.52 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 24 needed 20.47 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_24_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_24.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_24_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 25 with log-threshold of 572.587
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	8.16513e-25
+Max Rejection Likelihood:	4.60151e-16
+Median Rejection Likelihood:	4.9165e-19
+Average Rejection Likelihood:	6.22292e-18
+Rejection Constant:	3.65246e-21, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 588.207, acceptance probability = 0.0833333, time for particle = 0.06, process : 2
+
+
+Particle acceptance rate: 0.0915751
+Time needed so far for this iteration: 5.18 seconds
+Estimated time remaining: 20.8236 seconds
+
+i = 200, log likelihood = 586.111, acceptance probability = 0.0454545, time for particle = 0.9, process : 14
+
+
+Particle acceptance rate: 0.100452
+Time needed so far for this iteration: 6.91 seconds
+Estimated time remaining: 10.4341 seconds
+
+i = 300, log likelihood = 582.882, acceptance probability = 0.142857, time for particle = 0.25, process : 9
+
+
+Particle acceptance rate: 0.0963082
+Time needed so far for this iteration: 9.75 seconds
+Estimated time remaining: 6.565 seconds
+
+i = 400, log likelihood = 582.809, acceptance probability = 0.125, time for particle = 0.12, process : 17
+
+
+Particle acceptance rate: 0.0967586
+Time needed so far for this iteration: 12.95 seconds
+Estimated time remaining: 3.30225 seconds
+
+i = 500, log likelihood = 589.298, acceptance probability = 0.5, time for particle = 1.83, process : 7
+
+
+Particle acceptance rate: 0.0965251
+Time needed so far for this iteration: 14.55 seconds
+Estimated time remaining: 0.0582 seconds
+
+
+
+Particle acceptance rate: 0.0964828
+Time needed so far for this iteration: 14.59 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 25 needed 16.18 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_25_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_25.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_25_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 26 with log-threshold of 588.351
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.75191e-25
+Max Rejection Likelihood:	5.85909e-16
+Median Rejection Likelihood:	7.03364e-19
+Average Rejection Likelihood:	1.12203e-17
+Rejection Constant:	3.30405e-21, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 604.818, acceptance probability = 0.25, time for particle = 0.32, process : 11
+
+
+Particle acceptance rate: 0.078125
+Time needed so far for this iteration: 5.69 seconds
+Estimated time remaining: 22.8738 seconds
+
+i = 200, log likelihood = 591.862, acceptance probability = 0.0769231, time for particle = 0.8, process : 2
+
+
+Particle acceptance rate: 0.087184
+Time needed so far for this iteration: 6.84 seconds
+Estimated time remaining: 10.3284 seconds
+
+i = 300, log likelihood = 604.133, acceptance probability = 0.0714286, time for particle = 0.38, process : 12
+
+
+Particle acceptance rate: 0.0805802
+Time needed so far for this iteration: 11.33 seconds
+Estimated time remaining: 7.62887 seconds
+
+i = 400, log likelihood = 592.948, acceptance probability = 1, time for particle = 0.68, process : 23
+
+
+Particle acceptance rate: 0.0803213
+Time needed so far for this iteration: 15.57 seconds
+Estimated time remaining: 3.97035 seconds
+
+i = 500, log likelihood = 603.929, acceptance probability = 0.2, time for particle = 0.99, process : 6
+
+
+Particle acceptance rate: 0.0795165
+Time needed so far for this iteration: 19.57 seconds
+Estimated time remaining: 0.07828 seconds
+
+
+
+Particle acceptance rate: 0.0794933
+Time needed so far for this iteration: 19.57 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 26 needed 22.97 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_26_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_26.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_26_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 27 with log-threshold of 602.26
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.91946e-23
+Max Rejection Likelihood:	1.36823e-15
+Median Rejection Likelihood:	1.02564e-18
+Average Rejection Likelihood:	1.6624e-17
+Rejection Constant:	6.40977e-21, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 640.995, acceptance probability = 0.2, time for particle = 0.33, process : 10
+
+
+Particle acceptance rate: 0.0776398
+Time needed so far for this iteration: 4.82 seconds
+Estimated time remaining: 19.3764 seconds
+
+i = 200, log likelihood = 647.37, acceptance probability = 0.0344828, time for particle = 0.4, process : 15
+
+
+Particle acceptance rate: 0.0762195
+Time needed so far for this iteration: 9.76 seconds
+Estimated time remaining: 14.7376 seconds
+
+i = 300, log likelihood = 616.756, acceptance probability = 0.047619, time for particle = 0.34, process : 21
+
+
+Particle acceptance rate: 0.0731351
+Time needed so far for this iteration: 12.61 seconds
+Estimated time remaining: 8.49073 seconds
+
+i = 400, log likelihood = 620.775, acceptance probability = 0.333333, time for particle = 0.71, process : 7
+
+
+Particle acceptance rate: 0.0737327
+Time needed so far for this iteration: 16.58 seconds
+Estimated time remaining: 4.2279 seconds
+
+i = 500, log likelihood = 607.503, acceptance probability = 0.2, time for particle = 0.28, process : 21
+
+
+Particle acceptance rate: 0.074129
+Time needed so far for this iteration: 21.37 seconds
+Estimated time remaining: 0.08548 seconds
+
+
+
+Particle acceptance rate: 0.0742384
+Time needed so far for this iteration: 21.37 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 27 needed 22.9 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_27_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_27.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_27_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 28 with log-threshold of 615.181
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.6461e-24
+Max Rejection Likelihood:	3.52647e-15
+Median Rejection Likelihood:	1.75216e-18
+Average Rejection Likelihood:	2.75915e-17
+Rejection Constant:	8.29086e-21, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 658.633, acceptance probability = 0.0909091, time for particle = 0.61, process : 5
+
+
+Particle acceptance rate: 0.0770416
+Time needed so far for this iteration: 4.89 seconds
+Estimated time remaining: 19.6578 seconds
+
+i = 200, log likelihood = 621.668, acceptance probability = 0.030303, time for particle = 0.19, process : 1
+
+
+Particle acceptance rate: 0.0835422
+Time needed so far for this iteration: 7.7 seconds
+Estimated time remaining: 11.627 seconds
+
+i = 300, log likelihood = 620.795, acceptance probability = 0.111111, time for particle = 0.75, process : 1
+
+
+Particle acceptance rate: 0.0788851
+Time needed so far for this iteration: 11.87 seconds
+Estimated time remaining: 7.99247 seconds
+
+i = 400, log likelihood = 623.397, acceptance probability = 0.0555556, time for particle = 0.07, process : 13
+
+
+Particle acceptance rate: 0.0751033
+Time needed so far for this iteration: 16.9 seconds
+Estimated time remaining: 4.3095 seconds
+
+i = 500, log likelihood = 634.447, acceptance probability = 0.5, time for particle = 1.4, process : 21
+
+
+Particle acceptance rate: 0.0750413
+Time needed so far for this iteration: 19.59 seconds
+Estimated time remaining: 0.07836 seconds
+
+
+
+Particle acceptance rate: 0.0749925
+Time needed so far for this iteration: 19.59 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 28 needed 21.08 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_28_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_28.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_28_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 29 with log-threshold of 627.256
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 2, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	6.99825e-24
+Max Rejection Likelihood:	6.55547e-15
+Median Rejection Likelihood:	2.31134e-18
+Average Rejection Likelihood:	5.31452e-17
+Rejection Constant:	1.06903e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 633.695, acceptance probability = 0.2, time for particle = 1.2, process : 4
+
+
+Particle acceptance rate: 0.0638978
+Time needed so far for this iteration: 7.21 seconds
+Estimated time remaining: 28.9842 seconds
+
+i = 200, log likelihood = 656.454, acceptance probability = 0.0714286, time for particle = 0.56, process : 8
+
+
+Particle acceptance rate: 0.0717103
+Time needed so far for this iteration: 10.62 seconds
+Estimated time remaining: 16.0362 seconds
+
+i = 300, log likelihood = 632.179, acceptance probability = 0.5, time for particle = 0.57, process : 2
+
+
+Particle acceptance rate: 0.0714116
+Time needed so far for this iteration: 12.93 seconds
+Estimated time remaining: 8.7062 seconds
+
+i = 400, log likelihood = 638.206, acceptance probability = 0.0769231, time for particle = 2.85, process : 21
+
+
+Particle acceptance rate: 0.0722543
+Time needed so far for this iteration: 16.53 seconds
+Estimated time remaining: 4.21515 seconds
+
+i = 500, log likelihood = 634.936, acceptance probability = 0.1, time for particle = 0.14, process : 15
+
+
+Particle acceptance rate: 0.0733783
+Time needed so far for this iteration: 21.86 seconds
+Estimated time remaining: 0.08744 seconds
+
+
+
+Particle acceptance rate: 0.0734455
+Time needed so far for this iteration: 21.86 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 29 needed 24.33 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_29_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_29.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_29_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 30 with log-threshold of 639.783
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 2, 2, 3, 2, 1, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	9.66033e-23
+Max Rejection Likelihood:	2.6885e-15
+Median Rejection Likelihood:	2.52606e-18
+Average Rejection Likelihood:	3.57145e-17
+Rejection Constant:	1.29108e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 650.735, acceptance probability = 0.5, time for particle = 0.53, process : 17
+
+
+Particle acceptance rate: 0.0652742
+Time needed so far for this iteration: 6.2 seconds
+Estimated time remaining: 24.924 seconds
+
+i = 200, log likelihood = 647.567, acceptance probability = 0.0833333, time for particle = 0.05, process : 17
+
+
+Particle acceptance rate: 0.0667557
+Time needed so far for this iteration: 11.3 seconds
+Estimated time remaining: 17.063 seconds
+
+i = 300, log likelihood = 667.522, acceptance probability = 0.0909091, time for particle = 1.15, process : 14
+
+
+Particle acceptance rate: 0.0668598
+Time needed so far for this iteration: 15.62 seconds
+Estimated time remaining: 10.5175 seconds
+
+i = 400, log likelihood = 666.54, acceptance probability = 0.125, time for particle = 1.25, process : 9
+
+
+Particle acceptance rate: 0.0677392
+Time needed so far for this iteration: 18.56 seconds
+Estimated time remaining: 4.7328 seconds
+
+i = 500, log likelihood = 667.893, acceptance probability = 0.166667, time for particle = 1.47, process : 14
+
+
+Particle acceptance rate: 0.0687758
+Time needed so far for this iteration: 22.93 seconds
+Estimated time remaining: 0.09172 seconds
+
+
+
+Particle acceptance rate: 0.0688426
+Time needed so far for this iteration: 22.93 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 30 needed 24.5 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_30_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_30.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_30_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 31 with log-threshold of 650.386
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 3, 3, 3, 2, 3, 2, 2, 2, 3, 2, 2, 3, 4, 2, 2, 2, 3, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.12499e-24
+Max Rejection Likelihood:	7.39145e-15
+Median Rejection Likelihood:	7.23318e-18
+Average Rejection Likelihood:	1.05135e-16
+Rejection Constant:	4.11834e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 661.075, acceptance probability = 1, time for particle = 0.2, process : 12
+
+
+Particle acceptance rate: 0.10661
+Time needed so far for this iteration: 3.96 seconds
+Estimated time remaining: 15.9192 seconds
+
+i = 200, log likelihood = 651.505, acceptance probability = 0.25, time for particle = 1.99, process : 1
+
+
+Particle acceptance rate: 0.0935016
+Time needed so far for this iteration: 7.01 seconds
+Estimated time remaining: 10.5851 seconds
+
+i = 300, log likelihood = 682.189, acceptance probability = 0.1, time for particle = 1.64, process : 12
+
+
+Particle acceptance rate: 0.0938086
+Time needed so far for this iteration: 10.17 seconds
+Estimated time remaining: 6.8478 seconds
+
+i = 400, log likelihood = 668.255, acceptance probability = 0.5, time for particle = 1.02, process : 2
+
+
+Particle acceptance rate: 0.0992556
+Time needed so far for this iteration: 12.66 seconds
+Estimated time remaining: 3.2283 seconds
+
+i = 500, log likelihood = 667.491, acceptance probability = 0.2, time for particle = 0.99, process : 8
+
+
+Particle acceptance rate: 0.0964134
+Time needed so far for this iteration: 16.3 seconds
+Estimated time remaining: 0.0652 seconds
+
+
+
+Particle acceptance rate: 0.0962608
+Time needed so far for this iteration: 16.3 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 31 needed 18.91 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_31_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_31.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_31_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 32 with log-threshold of 660.19
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.449e-22
+Max Rejection Likelihood:	1.51999e-14
+Median Rejection Likelihood:	8.28779e-18
+Average Rejection Likelihood:	1.46168e-16
+Rejection Constant:	3.86812e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 670.096, acceptance probability = 0.0454545, time for particle = 0.2, process : 19
+
+
+Particle acceptance rate: 0.0613121
+Time needed so far for this iteration: 8.91 seconds
+Estimated time remaining: 35.8182 seconds
+
+i = 200, log likelihood = 664.163, acceptance probability = 0.0714286, time for particle = 0.92, process : 18
+
+
+Particle acceptance rate: 0.0613497
+Time needed so far for this iteration: 12.58 seconds
+Estimated time remaining: 18.9958 seconds
+
+i = 300, log likelihood = 672.047, acceptance probability = 0.037037, time for particle = 0.76, process : 17
+
+
+Particle acceptance rate: 0.064907
+Time needed so far for this iteration: 14.93 seconds
+Estimated time remaining: 10.0529 seconds
+
+i = 400, log likelihood = 664.916, acceptance probability = 0.0588235, time for particle = 0.35, process : 20
+
+
+Particle acceptance rate: 0.0667445
+Time needed so far for this iteration: 19.05 seconds
+Estimated time remaining: 4.85775 seconds
+
+i = 500, log likelihood = 664.65, acceptance probability = 0.5, time for particle = 1.66, process : 14
+
+
+Particle acceptance rate: 0.065634
+Time needed so far for this iteration: 24.2 seconds
+Estimated time remaining: 0.0968 seconds
+
+
+
+Particle acceptance rate: 0.0647491
+Time needed so far for this iteration: 27.86 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 32 needed 29.45 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_32_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_32.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_32_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 33 with log-threshold of 668.971
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.66184e-23
+Max Rejection Likelihood:	1.47504e-14
+Median Rejection Likelihood:	9.61987e-18
+Average Rejection Likelihood:	1.58425e-16
+Rejection Constant:	5.66699e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 669.87, acceptance probability = 0.125, time for particle = 0.21, process : 8
+
+
+Particle acceptance rate: 0.0687285
+Time needed so far for this iteration: 6.1 seconds
+Estimated time remaining: 24.522 seconds
+
+i = 200, log likelihood = 678.724, acceptance probability = 0.0555556, time for particle = 0.54, process : 11
+
+
+Particle acceptance rate: 0.0754717
+Time needed so far for this iteration: 8.56 seconds
+Estimated time remaining: 12.9256 seconds
+
+i = 300, log likelihood = 669.029, acceptance probability = 0.0555556, time for particle = 0.06, process : 7
+
+
+Particle acceptance rate: 0.0712082
+Time needed so far for this iteration: 13.48 seconds
+Estimated time remaining: 9.07653 seconds
+
+i = 400, log likelihood = 670.256, acceptance probability = 0.333333, time for particle = 0.94, process : 11
+
+
+Particle acceptance rate: 0.0703854
+Time needed so far for this iteration: 17.19 seconds
+Estimated time remaining: 4.38345 seconds
+
+i = 500, log likelihood = 671.993, acceptance probability = 0.0714286, time for particle = 0.55, process : 6
+
+
+Particle acceptance rate: 0.068738
+Time needed so far for this iteration: 21.96 seconds
+Estimated time remaining: 0.08784 seconds
+
+
+
+Particle acceptance rate: 0.0687106
+Time needed so far for this iteration: 21.96 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 33 needed 23.92 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_33_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_33.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_33_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 34 with log-threshold of 676.175
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	7.5409e-23
+Max Rejection Likelihood:	3.58088e-14
+Median Rejection Likelihood:	1.54275e-17
+Average Rejection Likelihood:	3.8369e-16
+Rejection Constant:	7.96154e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 679.562, acceptance probability = 1, time for particle = 5.38, process : 10
+
+
+Particle acceptance rate: 0.0677507
+Time needed so far for this iteration: 7.39 seconds
+Estimated time remaining: 29.7078 seconds
+
+i = 200, log likelihood = 684.591, acceptance probability = 0.166667, time for particle = 0.7, process : 6
+
+
+Particle acceptance rate: 0.065703
+Time needed so far for this iteration: 10.89 seconds
+Estimated time remaining: 16.4439 seconds
+
+i = 300, log likelihood = 686.331, acceptance probability = 1, time for particle = 0.55, process : 2
+
+
+Particle acceptance rate: 0.0678887
+Time needed so far for this iteration: 16.17 seconds
+Estimated time remaining: 10.8878 seconds
+
+i = 400, log likelihood = 679.889, acceptance probability = 0.0357143, time for particle = 0.78, process : 13
+
+
+Particle acceptance rate: 0.0647878
+Time needed so far for this iteration: 18.95 seconds
+Estimated time remaining: 4.83225 seconds
+
+i = 500, log likelihood = 686.276, acceptance probability = 0.0434783, time for particle = 0.15, process : 13
+
+
+Particle acceptance rate: 0.0648004
+Time needed so far for this iteration: 23.1 seconds
+Estimated time remaining: 0.0924 seconds
+
+
+
+Particle acceptance rate: 0.0649334
+Time needed so far for this iteration: 23.1 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 34 needed 26.95 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_34_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_34.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_34_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 35 with log-threshold of 682.493
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.69182e-22
+Max Rejection Likelihood:	1.27598e-13
+Median Rejection Likelihood:	3.28055e-17
+Average Rejection Likelihood:	4.83256e-16
+Rejection Constant:	8.94599e-20, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 690.52, acceptance probability = 0.333333, time for particle = 0.25, process : 5
+
+
+Particle acceptance rate: 0.0677048
+Time needed so far for this iteration: 6.09 seconds
+Estimated time remaining: 24.4818 seconds
+
+i = 200, log likelihood = 689.26, acceptance probability = 0.025, time for particle = 0.92, process : 1
+
+
+Particle acceptance rate: 0.0598623
+Time needed so far for this iteration: 11.73 seconds
+Estimated time remaining: 17.7123 seconds
+
+i = 300, log likelihood = 685.247, acceptance probability = 0.111111, time for particle = 0.35, process : 12
+
+
+Particle acceptance rate: 0.0607287
+Time needed so far for this iteration: 15.12 seconds
+Estimated time remaining: 10.1808 seconds
+
+i = 400, log likelihood = 686.885, acceptance probability = 0.0322581, time for particle = 2.01, process : 13
+
+
+Particle acceptance rate: 0.0583771
+Time needed so far for this iteration: 22.26 seconds
+Estimated time remaining: 5.6763 seconds
+
+i = 500, log likelihood = 694.053, acceptance probability = 0.333333, time for particle = 0.59, process : 15
+
+
+Particle acceptance rate: 0.0576967
+Time needed so far for this iteration: 28.8 seconds
+Estimated time remaining: 0.1152 seconds
+
+
+
+Particle acceptance rate: 0.0576945
+Time needed so far for this iteration: 28.8 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 35 needed 30.56 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_35_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_35.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_35_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 36 with log-threshold of 687.705
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.41255e-23
+Max Rejection Likelihood:	2.54951e-14
+Median Rejection Likelihood:	4.91137e-17
+Average Rejection Likelihood:	5.83493e-16
+Rejection Constant:	1.76096e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 692.196, acceptance probability = 0.2, time for particle = 0.74, process : 7
+
+
+Particle acceptance rate: 0.0705716
+Time needed so far for this iteration: 5.38 seconds
+Estimated time remaining: 21.6276 seconds
+
+i = 200, log likelihood = 688.621, acceptance probability = 0.0357143, time for particle = 2.02, process : 21
+
+
+Particle acceptance rate: 0.065445
+Time needed so far for this iteration: 12.01 seconds
+Estimated time remaining: 18.1351 seconds
+
+i = 300, log likelihood = 695.875, acceptance probability = 0.2, time for particle = 1.1, process : 7
+
+
+Particle acceptance rate: 0.0593472
+Time needed so far for this iteration: 16.88 seconds
+Estimated time remaining: 11.3659 seconds
+
+i = 400, log likelihood = 690.506, acceptance probability = 0.037037, time for particle = 3.72, process : 12
+
+
+Particle acceptance rate: 0.0613215
+Time needed so far for this iteration: 20.38 seconds
+Estimated time remaining: 5.1969 seconds
+
+i = 500, log likelihood = 690.054, acceptance probability = 0.03125, time for particle = 0.35, process : 15
+
+
+Particle acceptance rate: 0.0615536
+Time needed so far for this iteration: 24.43 seconds
+Estimated time remaining: 0.09772 seconds
+
+
+
+Particle acceptance rate: 0.0616329
+Time needed so far for this iteration: 24.43 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 36 needed 26.14 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_36_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_36.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_36_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 37 with log-threshold of 691.394
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.97035e-21
+Max Rejection Likelihood:	1.07105e-13
+Median Rejection Likelihood:	4.10012e-17
+Average Rejection Likelihood:	7.44922e-16
+Rejection Constant:	2.60057e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 694.436, acceptance probability = 0.166667, time for particle = 0.28, process : 21
+
+
+Particle acceptance rate: 0.0577367
+Time needed so far for this iteration: 9.05 seconds
+Estimated time remaining: 36.381 seconds
+
+i = 200, log likelihood = 698.038, acceptance probability = 0.2, time for particle = 0.2, process : 18
+
+
+Particle acceptance rate: 0.058651
+Time needed so far for this iteration: 13.3 seconds
+Estimated time remaining: 20.083 seconds
+
+i = 300, log likelihood = 693.893, acceptance probability = 0.0222222, time for particle = 1.72, process : 8
+
+
+Particle acceptance rate: 0.0605694
+Time needed so far for this iteration: 15.42 seconds
+Estimated time remaining: 10.3828 seconds
+
+i = 400, log likelihood = 698.347, acceptance probability = 1, time for particle = 0.65, process : 22
+
+
+Particle acceptance rate: 0.059988
+Time needed so far for this iteration: 22.25 seconds
+Estimated time remaining: 5.67375 seconds
+
+i = 500, log likelihood = 695.812, acceptance probability = 0.142857, time for particle = 0.16, process : 4
+
+
+Particle acceptance rate: 0.0601468
+Time needed so far for this iteration: 25.19 seconds
+Estimated time remaining: 0.10076 seconds
+
+
+
+Particle acceptance rate: 0.0599689
+Time needed so far for this iteration: 25.19 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 37 needed 28.96 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_37_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_37.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_37_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 38 with log-threshold of 694.633
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.48119e-21
+Max Rejection Likelihood:	1.33183e-13
+Median Rejection Likelihood:	8.07168e-17
+Average Rejection Likelihood:	1.04989e-15
+Rejection Constant:	4.6919e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 697.153, acceptance probability = 0.111111, time for particle = 1.99, process : 8
+
+
+Particle acceptance rate: 0.053135
+Time needed so far for this iteration: 8.72 seconds
+Estimated time remaining: 35.0544 seconds
+
+i = 200, log likelihood = 697.299, acceptance probability = 0.125, time for particle = 1.52, process : 2
+
+
+Particle acceptance rate: 0.0552029
+Time needed so far for this iteration: 12.16 seconds
+Estimated time remaining: 18.3616 seconds
+
+i = 300, log likelihood = 695.997, acceptance probability = 0.111111, time for particle = 0.42, process : 10
+
+
+Particle acceptance rate: 0.0558659
+Time needed so far for this iteration: 16.94 seconds
+Estimated time remaining: 11.4063 seconds
+
+i = 400, log likelihood = 699.01, acceptance probability = 0.5, time for particle = 1.05, process : 6
+
+
+Particle acceptance rate: 0.0547495
+Time needed so far for this iteration: 25.1 seconds
+Estimated time remaining: 6.4005 seconds
+
+i = 500, log likelihood = 695.346, acceptance probability = 0.25, time for particle = 0.67, process : 6
+
+
+Particle acceptance rate: 0.0527093
+Time needed so far for this iteration: 28.54 seconds
+Estimated time remaining: 0.11416 seconds
+
+
+
+Particle acceptance rate: 0.0526923
+Time needed so far for this iteration: 28.54 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 38 needed 31.16 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_38_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_38.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_38_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 39 with log-threshold of 696.747
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 3, 4, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.88464e-24
+Max Rejection Likelihood:	4.81326e-14
+Median Rejection Likelihood:	7.13676e-17
+Average Rejection Likelihood:	1.12427e-15
+Rejection Constant:	4.48331e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 696.985, acceptance probability = 0.0666667, time for particle = 5.72, process : 11
+
+
+Particle acceptance rate: 0.0438404
+Time needed so far for this iteration: 12.6 seconds
+Estimated time remaining: 50.652 seconds
+
+i = 200, log likelihood = 698.128, acceptance probability = 0.0243902, time for particle = 0.2, process : 11
+
+
+Particle acceptance rate: 0.045798
+Time needed so far for this iteration: 15.34 seconds
+Estimated time remaining: 23.1634 seconds
+
+i = 300, log likelihood = 701.534, acceptance probability = 0.0333333, time for particle = 0.59, process : 18
+
+
+Particle acceptance rate: 0.0467727
+Time needed so far for this iteration: 21.17 seconds
+Estimated time remaining: 14.2545 seconds
+
+i = 400, log likelihood = 697.747, acceptance probability = 0.047619, time for particle = 0.5, process : 19
+
+
+Particle acceptance rate: 0.0453978
+Time needed so far for this iteration: 27.54 seconds
+Estimated time remaining: 7.0227 seconds
+
+i = 500, log likelihood = 699.021, acceptance probability = 0.0833333, time for particle = 0.12, process : 13
+
+
+Particle acceptance rate: 0.0448069
+Time needed so far for this iteration: 35.72 seconds
+Estimated time remaining: 0.14288 seconds
+
+
+
+Particle acceptance rate: 0.0448334
+Time needed so far for this iteration: 35.72 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 39 needed 37.4 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_39_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_39.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_39_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 40 with log-threshold of 698.257
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.26065e-21
+Max Rejection Likelihood:	5.4297e-14
+Median Rejection Likelihood:	1.10593e-16
+Average Rejection Likelihood:	1.36567e-15
+Rejection Constant:	6.54837e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 700.232, acceptance probability = 0.0416667, time for particle = 5.47, process : 16
+
+
+Particle acceptance rate: 0.0346141
+Time needed so far for this iteration: 13.37 seconds
+Estimated time remaining: 53.7474 seconds
+
+i = 200, log likelihood = 698.491, acceptance probability = 0.047619, time for particle = 3.61, process : 4
+
+
+Particle acceptance rate: 0.0357846
+Time needed so far for this iteration: 27.74 seconds
+Estimated time remaining: 41.8874 seconds
+
+i = 300, log likelihood = 699.093, acceptance probability = 0.111111, time for particle = 0.34, process : 6
+
+
+Particle acceptance rate: 0.0371793
+Time needed so far for this iteration: 29.55 seconds
+Estimated time remaining: 19.897 seconds
+
+i = 400, log likelihood = 698.643, acceptance probability = 0.0204082, time for particle = 0.52, process : 14
+
+
+Particle acceptance rate: 0.0364033
+Time needed so far for this iteration: 33.7 seconds
+Estimated time remaining: 8.5935 seconds
+
+i = 500, log likelihood = 698.706, acceptance probability = 0.047619, time for particle = 1.04, process : 17
+
+
+Particle acceptance rate: 0.0351766
+Time needed so far for this iteration: 45.99 seconds
+Estimated time remaining: 0.18396 seconds
+
+
+
+Particle acceptance rate: 0.0352182
+Time needed so far for this iteration: 45.99 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 40 needed 50.31 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_40_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_40.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_40_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 41 with log-threshold of 699.296
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.54864e-22
+Max Rejection Likelihood:	8.57696e-14
+Median Rejection Likelihood:	1.19377e-16
+Average Rejection Likelihood:	1.60422e-15
+Rejection Constant:	5.65254e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 701.267, acceptance probability = 0.0238095, time for particle = 2.61, process : 11
+
+
+Particle acceptance rate: 0.0228467
+Time needed so far for this iteration: 17.37 seconds
+Estimated time remaining: 1 minutes, 9.8274 seconds
+
+i = 200, log likelihood = 701.227, acceptance probability = 0.0121951, time for particle = 2.3, process : 13
+
+
+Particle acceptance rate: 0.0227324
+Time needed so far for this iteration: 29.19 seconds
+Estimated time remaining: 44.0769 seconds
+
+i = 300, log likelihood = 700.709, acceptance probability = 0.1, time for particle = 1.2, process : 15
+
+
+Particle acceptance rate: 0.0232666
+Time needed so far for this iteration: 44.13 seconds
+Estimated time remaining: 29.7142 seconds
+
+i = 400, log likelihood = 700.652, acceptance probability = 0.0769231, time for particle = 0.32, process : 1
+
+
+Particle acceptance rate: 0.024623
+Time needed so far for this iteration: 47.5 seconds
+Estimated time remaining: 12.1125 seconds
+
+i = 500, log likelihood = 702.381, acceptance probability = 0.0416667, time for particle = 3.66, process : 7
+
+
+Particle acceptance rate: 0.0251282
+Time needed so far for this iteration: 58.22 seconds
+Estimated time remaining: 0.23288 seconds
+
+
+
+Particle acceptance rate: 0.0251289
+Time needed so far for this iteration: 58.22 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 41 needed 1 minutes, 1.07 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_41_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_41.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_41_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 42 with log-threshold of 700.215
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.92878e-22
+Max Rejection Likelihood:	2.83096e-13
+Median Rejection Likelihood:	1.7399e-16
+Average Rejection Likelihood:	3.23633e-15
+Rejection Constant:	7.22295e-19, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 701.488, acceptance probability = 0.0344828, time for particle = 0.14, process : 6
+
+
+Particle acceptance rate: 0.0219298
+Time needed so far for this iteration: 19.46 seconds
+Estimated time remaining: 1 minutes, 18.2292 seconds
+
+i = 200, log likelihood = 701.596, acceptance probability = 0.0625, time for particle = 1.18, process : 23
+
+
+Particle acceptance rate: 0.021106
+Time needed so far for this iteration: 36.66 seconds
+Estimated time remaining: 55.3566 seconds
+
+i = 300, log likelihood = 701.105, acceptance probability = 0.0625, time for particle = 1.82, process : 12
+
+
+Particle acceptance rate: 0.0206072
+Time needed so far for this iteration: 47.47 seconds
+Estimated time remaining: 31.9631 seconds
+
+i = 400, log likelihood = 700.525, acceptance probability = 0.0333333, time for particle = 13.25, process : 16
+
+
+Particle acceptance rate: 0.0209435
+Time needed so far for this iteration: 59.12 seconds
+Estimated time remaining: 15.0756 seconds
+
+i = 500, log likelihood = 700.563, acceptance probability = 0.0526316, time for particle = 2.39, process : 1
+
+
+Particle acceptance rate: 0.0208229
+Time needed so far for this iteration: 1 minutes, 11.45 seconds
+Estimated time remaining: 0.2858 seconds
+
+
+
+Particle acceptance rate: 0.0207842
+Time needed so far for this iteration: 1 minutes, 11.45 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 42 needed 1 minutes, 16.13 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_42_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_42.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_42_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 43 with log-threshold of 701.012
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 1, 1, 1, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.17599e-21
+Max Rejection Likelihood:	7.81439e-13
+Median Rejection Likelihood:	2.67572e-16
+Average Rejection Likelihood:	3.3e-15
+Rejection Constant:	1.69627e-18, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 701.448, acceptance probability = 0.0208333, time for particle = 1.4, process : 19
+
+
+Particle acceptance rate: 0.0191975
+Time needed so far for this iteration: 18.13 seconds
+Estimated time remaining: 1 minutes, 12.8826 seconds
+
+i = 200, log likelihood = 702.016, acceptance probability = 0.00714286, time for particle = 2.02, process : 16
+
+
+Particle acceptance rate: 0.0187617
+Time needed so far for this iteration: 37.29 seconds
+Estimated time remaining: 56.3079 seconds
+
+i = 300, log likelihood = 701.252, acceptance probability = 0.1, time for particle = 1.2, process : 13
+
+
+Particle acceptance rate: 0.0190828
+Time needed so far for this iteration: 52.65 seconds
+Estimated time remaining: 35.451 seconds
+
+i = 400, log likelihood = 701.295, acceptance probability = 0.166667, time for particle = 14.34, process : 12
+
+
+Particle acceptance rate: 0.0196242
+Time needed so far for this iteration: 1 minutes, 1.15 seconds
+Estimated time remaining: 15.5932 seconds
+
+i = 500, log likelihood = 701.532, acceptance probability = 0.0208333, time for particle = 1.59, process : 22
+
+
+Particle acceptance rate: 0.0192389
+Time needed so far for this iteration: 1 minutes, 17 seconds
+Estimated time remaining: 0.308 seconds
+
+
+
+Particle acceptance rate: 0.0192043
+Time needed so far for this iteration: 1 minutes, 17 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 43 needed 1 minutes, 21.11 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_43_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_43.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_43_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 44 with log-threshold of 701.583
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.72012e-21
+Max Rejection Likelihood:	1.78907e-13
+Median Rejection Likelihood:	3.0495e-16
+Average Rejection Likelihood:	4.13128e-15
+Rejection Constant:	1.58698e-18, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.293, acceptance probability = 0.0833333, time for particle = 1.42, process : 12
+
+
+Particle acceptance rate: 0.0127486
+Time needed so far for this iteration: 34.47 seconds
+Estimated time remaining: 2 minutes, 18.5694 seconds
+
+i = 200, log likelihood = 702.462, acceptance probability = 0.0166667, time for particle = 2.44, process : 3
+
+
+Particle acceptance rate: 0.0127608
+Time needed so far for this iteration: 1 minutes, 3.84 seconds
+Estimated time remaining: 1 minutes, 36.3984 seconds
+
+i = 300, log likelihood = 701.725, acceptance probability = 0.0208333, time for particle = 9.43, process : 8
+
+
+Particle acceptance rate: 0.0133952
+Time needed so far for this iteration: 1 minutes, 14.1 seconds
+Estimated time remaining: 49.894 seconds
+
+i = 400, log likelihood = 702.076, acceptance probability = 0.0175439, time for particle = 2.83, process : 15
+
+
+Particle acceptance rate: 0.0134409
+Time needed so far for this iteration: 1 minutes, 36.79 seconds
+Estimated time remaining: 24.6815 seconds
+
+i = 500, log likelihood = 701.742, acceptance probability = 0.0116279, time for particle = 3.09, process : 20
+
+
+Particle acceptance rate: 0.0133266
+Time needed so far for this iteration: 1 minutes, 47.61 seconds
+Estimated time remaining: 0.43044 seconds
+
+
+
+Particle acceptance rate: 0.0133174
+Time needed so far for this iteration: 1 minutes, 49.74 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 44 needed 1 minutes, 51.4 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_44_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_44.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_44_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 45 with log-threshold of 701.966
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 2, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 3, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.61931e-22
+Max Rejection Likelihood:	5.00202e-13
+Median Rejection Likelihood:	5.66744e-16
+Average Rejection Likelihood:	6.452e-15
+Rejection Constant:	2.36617e-18, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.499, acceptance probability = 0.00826446, time for particle = 1.09, process : 6
+
+
+Particle acceptance rate: 0.00920726
+Time needed so far for this iteration: 46.35 seconds
+Estimated time remaining: 3 minutes, 6.327 seconds
+
+i = 200, log likelihood = 702.06, acceptance probability = 0.0078125, time for particle = 13.49, process : 3
+
+
+Particle acceptance rate: 0.0087382
+Time needed so far for this iteration: 1 minutes, 24.58 seconds
+Estimated time remaining: 2 minutes, 7.7158 seconds
+
+i = 300, log likelihood = 702.434, acceptance probability = 0.00826446, time for particle = 1.06, process : 1
+
+
+Particle acceptance rate: 0.00852442
+Time needed so far for this iteration: 1 minutes, 58.43 seconds
+Estimated time remaining: 1 minutes, 19.7429 seconds
+
+i = 400, log likelihood = 702.395, acceptance probability = 0.0045045, time for particle = 4.98, process : 12
+
+
+Particle acceptance rate: 0.00865726
+Time needed so far for this iteration: 2 minutes, 19.25 seconds
+Estimated time remaining: 35.5087 seconds
+
+i = 500, log likelihood = 702.344, acceptance probability = 0.0147059, time for particle = 0.5, process : 23
+
+
+Particle acceptance rate: 0.0088563
+Time needed so far for this iteration: 2 minutes, 44.63 seconds
+Estimated time remaining: 0.65852 seconds
+
+
+
+Particle acceptance rate: 0.00885143
+Time needed so far for this iteration: 2 minutes, 45.2 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 45 needed 2 minutes, 49.79 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_45_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_45.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_45_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 46 with log-threshold of 702.208
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	3.8033e-20
+Max Rejection Likelihood:	2.8607e-13
+Median Rejection Likelihood:	5.23307e-16
+Average Rejection Likelihood:	7.4058e-15
+Rejection Constant:	4.57928e-18, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.382, acceptance probability = 0.0045045, time for particle = 9.46, process : 7
+
+
+Particle acceptance rate: 0.00743716
+Time needed so far for this iteration: 51.22 seconds
+Estimated time remaining: 3 minutes, 25.9044 seconds
+
+i = 200, log likelihood = 702.596, acceptance probability = 0.00431034, time for particle = 14.72, process : 22
+
+
+Particle acceptance rate: 0.00761789
+Time needed so far for this iteration: 1 minutes, 37.4 seconds
+Estimated time remaining: 2 minutes, 27.074 seconds
+
+i = 300, log likelihood = 702.417, acceptance probability = 0.00398406, time for particle = 3.98, process : 22
+
+
+Particle acceptance rate: 0.00743734
+Time needed so far for this iteration: 2 minutes, 11.13 seconds
+Estimated time remaining: 1 minutes, 28.2942 seconds
+
+i = 400, log likelihood = 702.386, acceptance probability = 0.0243902, time for particle = 6.94, process : 4
+
+
+Particle acceptance rate: 0.00721423
+Time needed so far for this iteration: 3 minutes, 22.45 seconds
+Estimated time remaining: 51.6247 seconds
+
+i = 500, log likelihood = 702.611, acceptance probability = 0.00952381, time for particle = 11.75, process : 23
+
+
+Particle acceptance rate: 0.00717515
+Time needed so far for this iteration: 3 minutes, 34 seconds
+Estimated time remaining: 0.856 seconds
+
+
+
+Particle acceptance rate: 0.00715773
+Time needed so far for this iteration: 3 minutes, 34 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 46 needed 3 minutes, 36.05 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_46_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_46.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_46_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 47 with log-threshold of 702.376
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.01166e-21
+Max Rejection Likelihood:	5.68804e-13
+Median Rejection Likelihood:	1.19255e-15
+Average Rejection Likelihood:	1.36377e-14
+Rejection Constant:	7.427e-18, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.703, acceptance probability = 0.00292398, time for particle = 4.92, process : 1
+
+
+Particle acceptance rate: 0.00755116
+Time needed so far for this iteration: 47.34 seconds
+Estimated time remaining: 3 minutes, 10.3068 seconds
+
+i = 200, log likelihood = 702.636, acceptance probability = 0.0625, time for particle = 6.33, process : 23
+
+
+Particle acceptance rate: 0.00672766
+Time needed so far for this iteration: 1 minutes, 38.11 seconds
+Estimated time remaining: 2 minutes, 28.1461 seconds
+
+i = 300, log likelihood = 702.594, acceptance probability = 0.25, time for particle = 9.23, process : 21
+
+
+Particle acceptance rate: 0.00662954
+Time needed so far for this iteration: 2 minutes, 28.98 seconds
+Estimated time remaining: 1 minutes, 40.3132 seconds
+
+i = 400, log likelihood = 702.83, acceptance probability = 0.0625, time for particle = 6.68, process : 16
+
+
+Particle acceptance rate: 0.0064513
+Time needed so far for this iteration: 3 minutes, 4.49 seconds
+Estimated time remaining: 47.045 seconds
+
+i = 500, log likelihood = 702.582, acceptance probability = 0.00442478, time for particle = 2.07, process : 2
+
+
+Particle acceptance rate: 0.00650915
+Time needed so far for this iteration: 3 minutes, 50.96 seconds
+Estimated time remaining: 0.92384 seconds
+
+
+
+Particle acceptance rate: 0.00649535
+Time needed so far for this iteration: 3 minutes, 50.96 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 47 needed 3 minutes, 56.08 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_47_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_47.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_47_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 48 with log-threshold of 702.51
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 2, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.87729e-20
+Max Rejection Likelihood:	1.8288e-12
+Median Rejection Likelihood:	2.07772e-15
+Average Rejection Likelihood:	2.6995e-14
+Rejection Constant:	7.72065e-18, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.858, acceptance probability = 0.00925926, time for particle = 0.05, process : 9
+
+
+Particle acceptance rate: 0.00396589
+Time needed so far for this iteration: 1 minutes, 39.61 seconds
+Estimated time remaining: 6 minutes, 40.4322 seconds
+
+i = 200, log likelihood = 702.879, acceptance probability = 0.003663, time for particle = 24.93, process : 2
+
+
+Particle acceptance rate: 0.00404506
+Time needed so far for this iteration: 2 minutes, 58.49 seconds
+Estimated time remaining: 4 minutes, 29.5199 seconds
+
+i = 300, log likelihood = 702.619, acceptance probability = 0.0666667, time for particle = 0.23, process : 8
+
+
+Particle acceptance rate: 0.00415991
+Time needed so far for this iteration: 3 minutes, 40.88 seconds
+Estimated time remaining: 2 minutes, 28.7259 seconds
+
+i = 400, log likelihood = 702.874, acceptance probability = 0.00387597, time for particle = 4.84, process : 5
+
+
+Particle acceptance rate: 0.00417406
+Time needed so far for this iteration: 4 minutes, 50.31 seconds
+Estimated time remaining: 1 minutes, 14.029 seconds
+
+i = 500, log likelihood = 702.858, acceptance probability = 0.00303951, time for particle = 14.13, process : 5
+
+
+Particle acceptance rate: 0.00421834
+Time needed so far for this iteration: 5 minutes, 53.1 seconds
+Estimated time remaining: 1.4124 seconds
+
+
+
+Particle acceptance rate: 0.00421608
+Time needed so far for this iteration: 5 minutes, 53.1 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 48 needed 5 minutes, 56.01 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_48_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_48.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_48_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 49 with log-threshold of 702.617
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.72496e-20
+Max Rejection Likelihood:	2.14242e-12
+Median Rejection Likelihood:	2.78147e-15
+Average Rejection Likelihood:	4.56129e-14
+Rejection Constant:	1.06088e-17, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.765, acceptance probability = 0.012987, time for particle = 17.34, process : 17
+
+
+Particle acceptance rate: 0.00373566
+Time needed so far for this iteration: 1 minutes, 34.71 seconds
+Estimated time remaining: 6 minutes, 20.7342 seconds
+
+i = 200, log likelihood = 702.712, acceptance probability = 0.00970874, time for particle = 11.7, process : 22
+
+
+Particle acceptance rate: 0.00343124
+Time needed so far for this iteration: 3 minutes, 32.49 seconds
+Estimated time remaining: 5 minutes, 20.8599 seconds
+
+i = 300, log likelihood = 702.813, acceptance probability = 0.00840336, time for particle = 4.84, process : 18
+
+
+Particle acceptance rate: 0.00333648
+Time needed so far for this iteration: 4 minutes, 58.72 seconds
+Estimated time remaining: 3 minutes, 21.1381 seconds
+
+i = 400, log likelihood = 702.622, acceptance probability = 0.00171233, time for particle = 15.51, process : 13
+
+
+Particle acceptance rate: 0.00341822
+Time needed so far for this iteration: 6 minutes, 4.75 seconds
+Estimated time remaining: 1 minutes, 33.0113 seconds
+
+i = 500, log likelihood = 702.711, acceptance probability = 0.00675676, time for particle = 2.44, process : 19
+
+
+Particle acceptance rate: 0.00340581
+Time needed so far for this iteration: 7 minutes, 41.84 seconds
+Estimated time remaining: 1.84736 seconds
+
+
+
+Particle acceptance rate: 0.00338097
+Time needed so far for this iteration: 7 minutes, 41.84 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 49 needed 7 minutes, 46.02 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_49_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_49.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_49_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 50 with log-threshold of 702.697
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	9.22997e-21
+Max Rejection Likelihood:	2.56324e-12
+Median Rejection Likelihood:	3.76978e-15
+Average Rejection Likelihood:	5.26119e-14
+Rejection Constant:	1.61353e-17, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.767, acceptance probability = 0.00251256, time for particle = 28.72, process : 21
+
+
+Particle acceptance rate: 0.0019289
+Time needed so far for this iteration: 4 minutes, 1.88 seconds
+Estimated time remaining: 16 minutes, 12.3576 seconds
+
+i = 200, log likelihood = 702.726, acceptance probability = 0.00157978, time for particle = 17.8, process : 15
+
+
+Particle acceptance rate: 0.00195555
+Time needed so far for this iteration: 6 minutes, 14.08 seconds
+Estimated time remaining: 9 minutes, 24.8608 seconds
+
+i = 300, log likelihood = 702.814, acceptance probability = 0.00363636, time for particle = 12.82, process : 19
+
+
+Particle acceptance rate: 0.0018831
+Time needed so far for this iteration: 8 minutes, 18.83 seconds
+Estimated time remaining: 5 minutes, 35.8789 seconds
+
+i = 400, log likelihood = 702.713, acceptance probability = 0.00150376, time for particle = 0.93, process : 8
+
+
+Particle acceptance rate: 0.0019284
+Time needed so far for this iteration: 10 minutes, 15.04 seconds
+Estimated time remaining: 2 minutes, 36.8352 seconds
+
+i = 500, log likelihood = 702.752, acceptance probability = 0.00128535, time for particle = 2.63, process : 16
+
+
+Particle acceptance rate: 0.00188763
+Time needed so far for this iteration: 13 minutes, 29.45 seconds
+Estimated time remaining: 3.2378 seconds
+
+
+
+Particle acceptance rate: 0.00189368
+Time needed so far for this iteration: 13 minutes, 29.45 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 50 needed 13 minutes, 31.05 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_50_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_50.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_50_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 51 with log-threshold of 702.759
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.20533e-21
+Max Rejection Likelihood:	1.23658e-11
+Median Rejection Likelihood:	6.29921e-15
+Average Rejection Likelihood:	9.36709e-14
+Rejection Constant:	3.61377e-17, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.807, acceptance probability = 0.00265957, time for particle = 0.06, process : 3
+
+
+Particle acceptance rate: 0.00223135
+Time needed so far for this iteration: 3 minutes, 1.84 seconds
+Estimated time remaining: 12 minutes, 10.9968 seconds
+
+i = 200, log likelihood = 702.853, acceptance probability = 0.00469484, time for particle = 0.42, process : 16
+
+
+Particle acceptance rate: 0.00198946
+Time needed so far for this iteration: 7 minutes, 13.23 seconds
+Estimated time remaining: 10 minutes, 54.1773 seconds
+
+i = 300, log likelihood = 702.814, acceptance probability = 0.000698812, time for particle = 33.99, process : 23
+
+
+Particle acceptance rate: 0.00212046
+Time needed so far for this iteration: 7 minutes, 47.9 seconds
+Estimated time remaining: 5 minutes, 15.0527 seconds
+
+i = 400, log likelihood = 702.852, acceptance probability = 0.0666667, time for particle = 6.04, process : 3
+
+
+Particle acceptance rate: 0.00197982
+Time needed so far for this iteration: 10 minutes, 56.7 seconds
+Estimated time remaining: 2 minutes, 47.4585 seconds
+
+i = 500, log likelihood = 702.769, acceptance probability = 0.000900901, time for particle = 1.51, process : 9
+
+
+Particle acceptance rate: 0.00197711
+Time needed so far for this iteration: 12 minutes, 56.36 seconds
+Estimated time remaining: 3.10544 seconds
+
+
+
+Particle acceptance rate: 0.00197634
+Time needed so far for this iteration: 12 minutes, 56.36 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 51 needed 13 minutes, 1.02 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_51_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_51.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_51_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 52 with log-threshold of 702.804
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 3, 3, 4, 5, 4, 4, 3, 3, 3, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	8.06469e-20
+Max Rejection Likelihood:	1.83181e-11
+Median Rejection Likelihood:	8.48604e-15
+Average Rejection Likelihood:	1.43509e-13
+Rejection Constant:	2.94317e-17, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.81, acceptance probability = 0.000915751, time for particle = 2.26, process : 8
+
+
+Particle acceptance rate: 0.000974545
+Time needed so far for this iteration: 7 minutes, 48.98 seconds
+Estimated time remaining: 31 minutes, 25.2996 seconds
+
+i = 200, log likelihood = 702.886, acceptance probability = 0.00104275, time for particle = 14.69, process : 14
+
+
+Particle acceptance rate: 0.00099988
+Time needed so far for this iteration: 10 minutes, 46.28 seconds
+Estimated time remaining: 16 minutes, 15.8828 seconds
+
+i = 300, log likelihood = 705.267, acceptance probability = 0.00194175, time for particle = 29.15, process : 7
+
+
+Particle acceptance rate: 0.000989156
+Time needed so far for this iteration: 17 minutes, 18.01 seconds
+Estimated time remaining: 11 minutes, 38.9267 seconds
+
+i = 400, log likelihood = 702.811, acceptance probability = 0.000318979, time for particle = 27.6, process : 18
+
+
+Particle acceptance rate: 0.00101517
+Time needed so far for this iteration: 20 minutes, 49.63 seconds
+Estimated time remaining: 5 minutes, 18.6556 seconds
+
+i = 500, log likelihood = 702.848, acceptance probability = 0.000818331, time for particle = 1.86, process : 22
+
+
+Particle acceptance rate: 0.00100608
+Time needed so far for this iteration: 26 minutes, 42.88 seconds
+Estimated time remaining: 6.41152 seconds
+
+
+
+Particle acceptance rate: 0.000997568
+Time needed so far for this iteration: 28 minutes, 39.06 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 52 needed 28 minutes, 41.11 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_52_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_52.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_52_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 53 with log-threshold of 702.839
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 3, 3, 2, 2, 3, 3, 3, 2, 2, 2, 2, 3, 2, 2, 2, 3, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.40106e-19
+Max Rejection Likelihood:	1.09422e-11
+Median Rejection Likelihood:	1.02191e-14
+Average Rejection Likelihood:	1.5061e-13
+Rejection Constant:	8.04105e-16, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.852, acceptance probability = 0.00101215, time for particle = 17.64, process : 16
+
+
+Particle acceptance rate: 0.00138003
+Time needed so far for this iteration: 5 minutes, 7.16 seconds
+Estimated time remaining: 20 minutes, 34.7832 seconds
+
+i = 200, log likelihood = 702.874, acceptance probability = 0.000397931, time for particle = 43.88, process : 22
+
+
+Particle acceptance rate: 0.00131575
+Time needed so far for this iteration: 10 minutes, 31.86 seconds
+Estimated time remaining: 15 minutes, 54.1086 seconds
+
+i = 300, log likelihood = 702.859, acceptance probability = 0.0102041, time for particle = 10.27, process : 1
+
+
+Particle acceptance rate: 0.00131237
+Time needed so far for this iteration: 12 minutes, 19.05 seconds
+Estimated time remaining: 8 minutes, 17.627 seconds
+
+i = 400, log likelihood = 705.474, acceptance probability = 0.027027, time for particle = 21.45, process : 3
+
+
+Particle acceptance rate: 0.00130521
+Time needed so far for this iteration: 16 minutes, 20.51 seconds
+Estimated time remaining: 4 minutes, 10.03 seconds
+
+i = 500, log likelihood = 702.857, acceptance probability = 0.00561798, time for particle = 37.4, process : 6
+
+
+Particle acceptance rate: 0.00126907
+Time needed so far for this iteration: 21 minutes, 48.56 seconds
+Estimated time remaining: 5.23424 seconds
+
+
+
+Particle acceptance rate: 0.00126545
+Time needed so far for this iteration: 21 minutes, 48.56 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 53 needed 21 minutes, 51.23 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_53_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_53.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_53_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 54 with log-threshold of 702.862
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+4, 3, 2, 2, 2, 2, 3, 2, 3, 3, 3, 3, 5, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	6.68661e-20
+Max Rejection Likelihood:	1.59457e-11
+Median Rejection Likelihood:	4.12429e-14
+Average Rejection Likelihood:	4.33777e-13
+Rejection Constant:	1.83631e-16, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.88, acceptance probability = 0.000542594, time for particle = 39.6, process : 10
+
+
+Particle acceptance rate: 0.000571099
+Time needed so far for this iteration: 11 minutes, 19.41 seconds
+Estimated time remaining: 45 minutes, 31.2282 seconds
+
+i = 200, log likelihood = 702.868, acceptance probability = 0.00175747, time for particle = 1.02, process : 20
+
+
+Particle acceptance rate: 0.000548022
+Time needed so far for this iteration: 21 minutes, 7.92 seconds
+Estimated time remaining: 31 minutes, 54.5592 seconds
+
+i = 300, log likelihood = 702.874, acceptance probability = 0.000221533, time for particle = 20.97, process : 13
+
+
+Particle acceptance rate: 0.000536993
+Time needed so far for this iteration: 31 minutes, 5.84 seconds
+Estimated time remaining: 20 minutes, 56.3323 seconds
+
+i = 400, log likelihood = 702.879, acceptance probability = 0.00063012, time for particle = 16.32, process : 2
+
+
+Particle acceptance rate: 0.000535698
+Time needed so far for this iteration: 39 minutes, 33.64 seconds
+Estimated time remaining: 10 minutes, 5.2782 seconds
+
+i = 500, log likelihood = 702.867, acceptance probability = 0.000247158, time for particle = 9.5, process : 21
+
+
+Particle acceptance rate: 0.000513368
+Time needed so far for this iteration: 56 minutes, 54.02 seconds
+Estimated time remaining: 13.6561 seconds
+
+
+
+Particle acceptance rate: 0.000514318
+Time needed so far for this iteration: 56 minutes, 54.02 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 54 needed 56 minutes, 56.05 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_54_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_54.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_54_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 55 with log-threshold of 702.879
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.67033e-19
+Max Rejection Likelihood:	2.44022e-11
+Median Rejection Likelihood:	2.70254e-14
+Average Rejection Likelihood:	4.47615e-13
+Rejection Constant:	1.9334e-15, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.88, acceptance probability = 0.0217391, time for particle = 2.49, process : 9
+
+
+Particle acceptance rate: 0.000452333
+Time needed so far for this iteration: 26 minutes, 41.22 seconds
+Estimated time remaining: 1 hours, 47 minutes, 16.9044 seconds
+
+i = 200, log likelihood = 702.881, acceptance probability = 0.000524109, time for particle = 69.11, process : 6
+
+
+Particle acceptance rate: 0.0004408
+Time needed so far for this iteration: 32 minutes, 55.68 seconds
+Estimated time remaining: 49 minutes, 43.2768 seconds
+
+i = 300, log likelihood = 703.064, acceptance probability = 0.00584795, time for particle = 88.82, process : 23
+
+
+Particle acceptance rate: 0.000455834
+Time needed so far for this iteration: 38 minutes, 49.25 seconds
+Estimated time remaining: 26 minutes, 8.36167 seconds
+
+i = 400, log likelihood = 702.886, acceptance probability = 0.000528541, time for particle = 7.56, process : 21
+
+
+Particle acceptance rate: 0.000448148
+Time needed so far for this iteration: 48 minutes, 24.07 seconds
+Estimated time remaining: 12 minutes, 20.5379 seconds
+
+i = 500, log likelihood = 705.191, acceptance probability = 0.00172712, time for particle = 37.18, process : 16
+
+
+Particle acceptance rate: 0.000459106
+Time needed so far for this iteration: 58 minutes, 47.32 seconds
+Estimated time remaining: 14.1093 seconds
+
+
+
+Particle acceptance rate: 0.000460135
+Time needed so far for this iteration: 58 minutes, 47.32 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 55 needed 58 minutes, 50.52 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_55_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_55.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_55_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 56 with log-threshold of 702.89
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 2, 1, 2, 2, 3, 1, 1, 1, 2, 3, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	5.81304e-19
+Max Rejection Likelihood:	7.87335e-11
+Median Rejection Likelihood:	6.88075e-14
+Average Rejection Likelihood:	1.18761e-12
+Rejection Constant:	3.96175e-15, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 702.896, acceptance probability = 0.000183419, time for particle = 73.64, process : 15
+
+
+Particle acceptance rate: 0.000399111
+Time needed so far for this iteration: 18 minutes, 34.05 seconds
+Estimated time remaining: 1 hours, 14 minutes, 38.481 seconds
+
+i = 200, log likelihood = 703.858, acceptance probability = 0.00162866, time for particle = 107.67, process : 4
+
+
+Particle acceptance rate: 0.000387494
+Time needed so far for this iteration: 34 minutes, 16.55 seconds
+Estimated time remaining: 51 minutes, 45.3905 seconds
+
+i = 300, log likelihood = 704.445, acceptance probability = 0.000440529, time for particle = 1.56, process : 14
+
+
+Particle acceptance rate: 0.00038438
+Time needed so far for this iteration: 46 minutes, 40.6 seconds
+Estimated time remaining: 31 minutes, 25.7373 seconds
+
+i = 400, log likelihood = 702.901, acceptance probability = 0.000397614, time for particle = 132.4, process : 22
+
+
+Particle acceptance rate: 0.000400979
+Time needed so far for this iteration: 55 minutes, 25.9 seconds
+Estimated time remaining: 14 minutes, 8.1045 seconds
+
+i = 500, log likelihood = 704.431, acceptance probability = 0.000365364, time for particle = 73.54, process : 15
+
+
+Particle acceptance rate: 0.000416103
+Time needed so far for this iteration: 1 hours, 13 minutes, 17.43 seconds
+Estimated time remaining: 17.5897 seconds
+
+
+
+Particle acceptance rate: 0.000414423
+Time needed so far for this iteration: 1 hours, 13 minutes, 17.43 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 56 needed 1 hours, 13 minutes, 21.06 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_56_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_56.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_56_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 57 with log-threshold of 702.907
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	4.81095e-19
+Max Rejection Likelihood:	2.31346e-08
+Median Rejection Likelihood:	2.32657e-12
+Average Rejection Likelihood:	8.32918e-11
+Rejection Constant:	9.19564e-14, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 704.044, acceptance probability = 0.0357143, time for particle = 99.37, process : 10
+
+
+Particle acceptance rate: 0.00464166
+Time needed so far for this iteration: 1 minutes, 59.3 seconds
+Estimated time remaining: 7 minutes, 59.586 seconds
+
+i = 200, log likelihood = 703.116, acceptance probability = 0.00833333, time for particle = 3.32, process : 14
+
+
+Particle acceptance rate: 0.00462717
+Time needed so far for this iteration: 4 minutes, 34.77 seconds
+Estimated time remaining: 6 minutes, 54.9027 seconds
+
+i = 300, log likelihood = 703.35, acceptance probability = 0.00318471, time for particle = 64.15, process : 2
+
+
+Particle acceptance rate: 0.0049563
+Time needed so far for this iteration: 4 minutes, 34.77 seconds
+Estimated time remaining: 3 minutes, 5.0118 seconds
+
+i = 400, log likelihood = 703.883, acceptance probability = 0.00392157, time for particle = 118.02, process : 1
+
+
+Particle acceptance rate: 0.00515291
+Time needed so far for this iteration: 5 minutes, 15.51 seconds
+Estimated time remaining: 1 minutes, 20.455 seconds
+
+i = 500, log likelihood = 703.093, acceptance probability = 0.0909091, time for particle = 244.06, process : 20
+
+
+Particle acceptance rate: 0.00518678
+Time needed so far for this iteration: 6 minutes, 56.76 seconds
+Estimated time remaining: 1.66704 seconds
+
+
+
+Particle acceptance rate: 0.00516339
+Time needed so far for this iteration: 6 minutes, 56.76 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 57 needed 7 minutes, 1.12 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_57_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_57.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_57_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 58 with log-threshold of 703.755
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.32395e-21
+Max Rejection Likelihood:	7.52351e-09
+Median Rejection Likelihood:	5.31256e-12
+Average Rejection Likelihood:	1.24421e-10
+Rejection Constant:	1.04499e-14, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 703.947, acceptance probability = 0.00271003, time for particle = 276.16, process : 22
+
+
+Particle acceptance rate: 0.00215285
+Time needed so far for this iteration: 3 minutes, 54.11 seconds
+Estimated time remaining: 15 minutes, 41.1222 seconds
+
+i = 200, log likelihood = 704.917, acceptance probability = 0.003003, time for particle = 34.1, process : 1
+
+
+Particle acceptance rate: 0.00225015
+Time needed so far for this iteration: 6 minutes, 13.03 seconds
+Estimated time remaining: 9 minutes, 23.2753 seconds
+
+i = 300, log likelihood = 704.319, acceptance probability = 0.00714286, time for particle = 22.4, process : 20
+
+
+Particle acceptance rate: 0.00226763
+Time needed so far for this iteration: 9 minutes, 39.58 seconds
+Estimated time remaining: 6 minutes, 30.2505 seconds
+
+i = 400, log likelihood = 704.279, acceptance probability = 0.004, time for particle = 33.16, process : 15
+
+
+Particle acceptance rate: 0.00226319
+Time needed so far for this iteration: 13 minutes, 14.29 seconds
+Estimated time remaining: 3 minutes, 22.5439 seconds
+
+i = 500, log likelihood = 707.515, acceptance probability = 0.0010917, time for particle = 251.41, process : 20
+
+
+Particle acceptance rate: 0.00238496
+Time needed so far for this iteration: 14 minutes, 39.28 seconds
+Estimated time remaining: 3.51712 seconds
+
+
+
+Particle acceptance rate: 0.00239054
+Time needed so far for this iteration: 14 minutes, 39.28 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 58 needed 14 minutes, 41.05 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_58_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_58.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_58_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 59 with log-threshold of 704.583
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 3, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	9.25671e-18
+Max Rejection Likelihood:	1.31464e-08
+Median Rejection Likelihood:	4.60998e-12
+Average Rejection Likelihood:	1.09691e-10
+Rejection Constant:	1.25368e-14, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 705.337, acceptance probability = 0.000551876, time for particle = 961.82, process : 16
+
+
+Particle acceptance rate: 0.00135822
+Time needed so far for this iteration: 7 minutes, 53.5 seconds
+Estimated time remaining: 31 minutes, 43.47 seconds
+
+i = 200, log likelihood = 704.748, acceptance probability = 0.00251256, time for particle = 3.92, process : 11
+
+
+Particle acceptance rate: 0.00138287
+Time needed so far for this iteration: 11 minutes, 31.93 seconds
+Estimated time remaining: 17 minutes, 24.8143 seconds
+
+i = 300, log likelihood = 708.141, acceptance probability = 0.00067659, time for particle = 101.6, process : 22
+
+
+Particle acceptance rate: 0.00139043
+Time needed so far for this iteration: 15 minutes, 59.91 seconds
+Estimated time remaining: 10 minutes, 46.3394 seconds
+
+i = 400, log likelihood = 706.25, acceptance probability = 0.00284091, time for particle = 20.89, process : 6
+
+
+Particle acceptance rate: 0.00139351
+Time needed so far for this iteration: 20 minutes, 57.21 seconds
+Estimated time remaining: 5 minutes, 20.5885 seconds
+
+i = 500, log likelihood = 706.135, acceptance probability = 0.000878735, time for particle = 8.69, process : 12
+
+
+Particle acceptance rate: 0.00144965
+Time needed so far for this iteration: 25 minutes, 22.75 seconds
+Estimated time remaining: 6.091 seconds
+
+
+
+Particle acceptance rate: 0.00144583
+Time needed so far for this iteration: 25 minutes, 22.75 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 59 needed 25 minutes, 26.06 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_59_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_59.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_59_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 60 with log-threshold of 705.272
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.10416e-17
+Max Rejection Likelihood:	9.06307e-09
+Median Rejection Likelihood:	2.1274e-12
+Average Rejection Likelihood:	6.2591e-11
+Rejection Constant:	5.77676e-15, corresponding to the 0.05 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 705.355, acceptance probability = 0.00632911, time for particle = 21.31, process : 15
+
+
+Particle acceptance rate: 0.000599003
+Time needed so far for this iteration: 17 minutes, 34 seconds
+Estimated time remaining: 1 hours, 10 minutes, 37.08 seconds
+
+i = 200, log likelihood = 705.699, acceptance probability = 0.0119048, time for particle = 21.5, process : 13
+
+
+Particle acceptance rate: 0.000696335
+Time needed so far for this iteration: 22 minutes, 15.8 seconds
+Estimated time remaining: 33 minutes, 37.058 seconds
+
+i = 300, log likelihood = 705.408, acceptance probability = 0.000190985, time for particle = 0.84, process : 5
+
+
+Particle acceptance rate: 0.000694467
+Time needed so far for this iteration: 34 minutes, 33.22 seconds
+Estimated time remaining: 23 minutes, 15.9681 seconds
+
+i = 400, log likelihood = 705.692, acceptance probability = 0.000504796, time for particle = 66.61, process : 3
+
+
+Particle acceptance rate: 0.000672842
+Time needed so far for this iteration: 45 minutes, 26.22 seconds
+Estimated time remaining: 11 minutes, 35.1861 seconds
+
+i = 500, log likelihood = 706.16, acceptance probability = 0.010101, time for particle = 18.15, process : 17
+
+
+Particle acceptance rate: 0.00070402
+Time needed so far for this iteration: 48 minutes, 39.46 seconds
+Estimated time remaining: 11.6778 seconds
+
+
+
+Particle acceptance rate: 0.00070478
+Time needed so far for this iteration: 48 minutes, 39.46 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 60 needed 48 minutes, 41.03 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_60_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_60.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_60_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 61 with log-threshold of 705.799
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.96608e-18
+Max Rejection Likelihood:	4.20407e-09
+Median Rejection Likelihood:	1.42815e-12
+Average Rejection Likelihood:	4.18269e-11
+Rejection Constant:	6.93206e-14, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 706.075, acceptance probability = 0.000291375, time for particle = 12.73, process : 9
+
+
+Particle acceptance rate: 0.000838125
+Time needed so far for this iteration: 12 minutes, 0.28 seconds
+Estimated time remaining: 48 minutes, 15.5256 seconds
+
+i = 200, log likelihood = 708.816, acceptance probability = 0.00221729, time for particle = 47.7, process : 7
+
+
+Particle acceptance rate: 0.000860996
+Time needed so far for this iteration: 20 minutes, 4.66 seconds
+Estimated time remaining: 30 minutes, 19.0366 seconds
+
+i = 300, log likelihood = 710.165, acceptance probability = 0.000867303, time for particle = 247.58, process : 21
+
+
+Particle acceptance rate: 0.000913353
+Time needed so far for this iteration: 25 minutes, 23.14 seconds
+Estimated time remaining: 17 minutes, 5.58093 seconds
+
+i = 400, log likelihood = 705.905, acceptance probability = 0.000833333, time for particle = 87.01, process : 23
+
+
+Particle acceptance rate: 0.000936696
+Time needed so far for this iteration: 36 minutes, 2.71 seconds
+Estimated time remaining: 9 minutes, 11.491 seconds
+
+i = 500, log likelihood = 705.888, acceptance probability = 0.000577034, time for particle = 54.12, process : 7
+
+
+Particle acceptance rate: 0.000949419
+Time needed so far for this iteration: 39 minutes, 14.35 seconds
+Estimated time remaining: 9.4174 seconds
+
+
+
+Particle acceptance rate: 0.000945639
+Time needed so far for this iteration: 40 minutes, 21.6 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 61 needed 40 minutes, 24.83 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_61_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_61.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_61_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 62 with log-threshold of 706.419
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 1, 1, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.49755e-17
+Max Rejection Likelihood:	3.35804e-09
+Median Rejection Likelihood:	2.23394e-12
+Average Rejection Likelihood:	5.26203e-11
+Rejection Constant:	1.19814e-13, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 710.981, acceptance probability = 0.00165017, time for particle = 1.03, process : 4
+
+
+Particle acceptance rate: 0.000832813
+Time needed so far for this iteration: 13 minutes, 58.62 seconds
+Estimated time remaining: 56 minutes, 11.2524 seconds
+
+i = 200, log likelihood = 709.545, acceptance probability = 0.00144718, time for particle = 226.25, process : 17
+
+
+Particle acceptance rate: 0.000901319
+Time needed so far for this iteration: 19 minutes, 16.96 seconds
+Estimated time remaining: 29 minutes, 7.0096 seconds
+
+i = 300, log likelihood = 708.301, acceptance probability = 0.00505051, time for particle = 27.63, process : 3
+
+
+Particle acceptance rate: 0.000892475
+Time needed so far for this iteration: 26 minutes, 48.91 seconds
+Estimated time remaining: 18 minutes, 3.33273 seconds
+
+i = 400, log likelihood = 708.114, acceptance probability = 0.00088968, time for particle = 40.91, process : 19
+
+
+Particle acceptance rate: 0.000919599
+Time needed so far for this iteration: 37 minutes, 34.83 seconds
+Estimated time remaining: 9 minutes, 34.9816 seconds
+
+i = 500, log likelihood = 706.859, acceptance probability = 0.00735294, time for particle = 220.54, process : 15
+
+
+Particle acceptance rate: 0.000903168
+Time needed so far for this iteration: 48 minutes, 32.77 seconds
+Estimated time remaining: 11.6511 seconds
+
+
+
+Particle acceptance rate: 0.000900641
+Time needed so far for this iteration: 48 minutes, 32.77 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 62 needed 48 minutes, 36.01 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_62_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_62.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_62_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 63 with log-threshold of 707.343
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.6713e-18
+Max Rejection Likelihood:	4.53881e-08
+Median Rejection Likelihood:	5.94914e-12
+Average Rejection Likelihood:	2.42461e-10
+Rejection Constant:	3.7515e-13, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 709.202, acceptance probability = 0.00480769, time for particle = 132.34, process : 8
+
+
+Particle acceptance rate: 0.00105584
+Time needed so far for this iteration: 11 minutes, 3.48 seconds
+Estimated time remaining: 44 minutes, 27.1896 seconds
+
+i = 200, log likelihood = 707.768, acceptance probability = 0.000610874, time for particle = 385.4, process : 16
+
+
+Particle acceptance rate: 0.00100564
+Time needed so far for this iteration: 18 minutes, 1.28 seconds
+Estimated time remaining: 27 minutes, 12.7328 seconds
+
+i = 300, log likelihood = 709.474, acceptance probability = 0.000896057, time for particle = 299.46, process : 20
+
+
+Particle acceptance rate: 0.000965686
+Time needed so far for this iteration: 27 minutes, 54.01 seconds
+Estimated time remaining: 18 minutes, 47.1667 seconds
+
+i = 400, log likelihood = 707.671, acceptance probability = 0.000728863, time for particle = 160.46, process : 16
+
+
+Particle acceptance rate: 0.000935929
+Time needed so far for this iteration: 34 minutes, 34.08 seconds
+Estimated time remaining: 8 minutes, 48.8904 seconds
+
+i = 500, log likelihood = 709.5, acceptance probability = 0.00108108, time for particle = 188.72, process : 11
+
+
+Particle acceptance rate: 0.000885868
+Time needed so far for this iteration: 53 minutes, 9.21 seconds
+Estimated time remaining: 12.7568 seconds
+
+
+
+Particle acceptance rate: 0.000887666
+Time needed so far for this iteration: 53 minutes, 9.21 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 63 needed 53 minutes, 11.05 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_63_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_63.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_63_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 64 with log-threshold of 708.216
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	7.87476e-18
+Max Rejection Likelihood:	3.87902e-08
+Median Rejection Likelihood:	1.54943e-11
+Average Rejection Likelihood:	3.92806e-10
+Rejection Constant:	6.30401e-13, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 709.237, acceptance probability = 0.000363769, time for particle = 88.67, process : 6
+
+
+Particle acceptance rate: 0.000787532
+Time needed so far for this iteration: 13 minutes, 26.17 seconds
+Estimated time remaining: 54 minutes, 0.8034 seconds
+
+i = 200, log likelihood = 709.604, acceptance probability = 0.00181159, time for particle = 138.64, process : 20
+
+
+Particle acceptance rate: 0.000761606
+Time needed so far for this iteration: 23 minutes, 41.45 seconds
+Estimated time remaining: 35 minutes, 46.3895 seconds
+
+i = 300, log likelihood = 708.649, acceptance probability = 0.000247647, time for particle = 139.78, process : 6
+
+
+Particle acceptance rate: 0.000712787
+Time needed so far for this iteration: 36 minutes, 54.18 seconds
+Estimated time remaining: 24 minutes, 50.8812 seconds
+
+i = 400, log likelihood = 709.369, acceptance probability = 0.0070922, time for particle = 255.55, process : 10
+
+
+Particle acceptance rate: 0.000715129
+Time needed so far for this iteration: 44 minutes, 41.18 seconds
+Estimated time remaining: 11 minutes, 23.7009 seconds
+
+i = 500, log likelihood = 708.362, acceptance probability = 0.00041876, time for particle = 461.93, process : 17
+
+
+Particle acceptance rate: 0.000705996
+Time needed so far for this iteration: 59 minutes, 10.45 seconds
+Estimated time remaining: 14.2018 seconds
+
+
+
+Particle acceptance rate: 0.000705233
+Time needed so far for this iteration: 59 minutes, 10.45 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 64 needed 59 minutes, 16.07 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_64_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_64.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_64_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 65 with log-threshold of 708.914
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.98682e-18
+Max Rejection Likelihood:	6.21333e-08
+Median Rejection Likelihood:	2.17317e-11
+Average Rejection Likelihood:	4.72657e-10
+Rejection Constant:	1.21769e-12, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 710.4, acceptance probability = 0.000331565, time for particle = 68.1, process : 17
+
+
+Particle acceptance rate: 0.000623134
+Time needed so far for this iteration: 18 minutes, 46.64 seconds
+Estimated time remaining: 1 hours, 15 minutes, 29.0928 seconds
+
+i = 200, log likelihood = 709.179, acceptance probability = 0.0013245, time for particle = 175.83, process : 23
+
+
+Particle acceptance rate: 0.000624938
+Time needed so far for this iteration: 31 minutes, 39.67 seconds
+Estimated time remaining: 47 minutes, 48.5017 seconds
+
+i = 300, log likelihood = 709.61, acceptance probability = 0.000452284, time for particle = 53.95, process : 4
+
+
+Particle acceptance rate: 0.000654704
+Time needed so far for this iteration: 42 minutes, 3.27 seconds
+Estimated time remaining: 28 minutes, 19.0018 seconds
+
+i = 400, log likelihood = 710.864, acceptance probability = 0.000388954, time for particle = 60.41, process : 16
+
+
+Particle acceptance rate: 0.0006297
+Time needed so far for this iteration: 1 hours, 5 minutes, 56.54 seconds
+Estimated time remaining: 16 minutes, 48.9177 seconds
+
+i = 500, log likelihood = 709.059, acceptance probability = 0.0769231, time for particle = 290.09, process : 19
+
+
+Particle acceptance rate: 0.000628572
+Time needed so far for this iteration: 1 hours, 7 minutes, 44.46 seconds
+Estimated time remaining: 16.2578 seconds
+
+
+
+Particle acceptance rate: 0.000629174
+Time needed so far for this iteration: 1 hours, 7 minutes, 44.46 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 65 needed 1 hours, 7 minutes, 46.07 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_65_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_65.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_65_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 66 with log-threshold of 709.608
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 3, 4, 3, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 4, 4, 4, 3, 3, 4, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.78728e-17
+Max Rejection Likelihood:	1.82155e-07
+Median Rejection Likelihood:	4.10478e-11
+Average Rejection Likelihood:	1.41064e-09
+Rejection Constant:	2.09665e-12, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 710.869, acceptance probability = 0.00113122, time for particle = 17.97, process : 19
+
+
+Particle acceptance rate: 0.000406098
+Time needed so far for this iteration: 27 minutes, 51.75 seconds
+Estimated time remaining: 1 hours, 52 minutes, 0.435 seconds
+
+i = 200, log likelihood = 710.359, acceptance probability = 0.000870322, time for particle = 248.83, process : 16
+
+
+Particle acceptance rate: 0.000398547
+Time needed so far for this iteration: 47 minutes, 4.86 seconds
+Estimated time remaining: 1 hours, 11 minutes, 5.5386 seconds
+
+i = 300, log likelihood = 710.548, acceptance probability = 0.000938967, time for particle = 303.57, process : 22
+
+
+Particle acceptance rate: 0.000415716
+Time needed so far for this iteration: 1 hours, 8 minutes, 42.88 seconds
+Estimated time remaining: 46 minutes, 16.0725 seconds
+
+i = 400, log likelihood = 709.875, acceptance probability = 0.00101833, time for particle = 247.95, process : 15
+
+
+Particle acceptance rate: 0.000427884
+Time needed so far for this iteration: 1 hours, 17 minutes, 0.14 seconds
+Estimated time remaining: 19 minutes, 38.1357 seconds
+
+i = 500, log likelihood = 709.842, acceptance probability = 0.00229885, time for particle = 139.65, process : 2
+
+
+Particle acceptance rate: 0.00042172
+Time needed so far for this iteration: 1 hours, 42 minutes, 10.77 seconds
+Estimated time remaining: 24.5231 seconds
+
+
+
+Particle acceptance rate: 0.000423133
+Time needed so far for this iteration: 1 hours, 42 minutes, 10.77 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 66 needed 1 hours, 42 minutes, 16.16 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_66_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_66.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_66_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 67 with log-threshold of 710.106
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.5016e-18
+Max Rejection Likelihood:	8.20944e-08
+Median Rejection Likelihood:	8.648e-11
+Average Rejection Likelihood:	1.48911e-09
+Rejection Constant:	5.25698e-12, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 710.635, acceptance probability = 0.000446628, time for particle = 196.75, process : 4
+
+
+Particle acceptance rate: 0.000399787
+Time needed so far for this iteration: 44 minutes, 50.91 seconds
+Estimated time remaining: 3 hours, 17.4582 seconds
+
+i = 200, log likelihood = 710.449, acceptance probability = 0.00059988, time for particle = 107.45, process : 2
+
+
+Particle acceptance rate: 0.000421987
+Time needed so far for this iteration: 44 minutes, 50.91 seconds
+Estimated time remaining: 1 hours, 7 minutes, 43.2741 seconds
+
+i = 300, log likelihood = 710.896, acceptance probability = 0.000683527, time for particle = 80.36, process : 14
+
+
+Particle acceptance rate: 0.000431339
+Time needed so far for this iteration: 1 hours, 10 minutes, 31.74 seconds
+Estimated time remaining: 47 minutes, 29.3716 seconds
+
+i = 400, log likelihood = 710.369, acceptance probability = 0.000218198, time for particle = 354.9, process : 14
+
+
+Particle acceptance rate: 0.000435036
+Time needed so far for this iteration: 1 hours, 17 minutes, 21.65 seconds
+Estimated time remaining: 19 minutes, 43.6208 seconds
+
+i = 500, log likelihood = 710.617, acceptance probability = 0.00170358, time for particle = 13.58, process : 23
+
+
+Particle acceptance rate: 0.000420008
+Time needed so far for this iteration: 1 hours, 38 minutes, 19.36 seconds
+Estimated time remaining: 23.5974 seconds
+
+
+
+Particle acceptance rate: 0.000421087
+Time needed so far for this iteration: 1 hours, 38 minutes, 19.36 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 67 needed 1 hours, 38 minutes, 21.08 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_67_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_67.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_67_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 68 with log-threshold of 710.543
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 
+
+Rejection sampler:
+Min Rejection Likelihood:	1.04885e-15
+Max Rejection Likelihood:	9.06846e-07
+Median Rejection Likelihood:	1.74935e-10
+Average Rejection Likelihood:	5.27923e-09
+Rejection Constant:	7.82402e-12, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 711.141, acceptance probability = 0.00218818, time for particle = 61.63, process : 11
+
+
+Particle acceptance rate: 0.000343474
+Time needed so far for this iteration: 33 minutes, 0.55 seconds
+Estimated time remaining: 2 hours, 12 minutes, 41.811 seconds
+
+i = 200, log likelihood = 711.002, acceptance probability = 0.00119617, time for particle = 194.33, process : 16
+
+
+Particle acceptance rate: 0.000313186
+Time needed so far for this iteration: 1 hours, 12 minutes, 43.99 seconds
+Estimated time remaining: 1 hours, 49 minutes, 49.6249 seconds
+
+i = 300, log likelihood = 711.279, acceptance probability = 0.000125992, time for particle = 306.59, process : 21
+
+
+Particle acceptance rate: 0.000311188
+Time needed so far for this iteration: 1 hours, 29 minutes, 1.46 seconds
+Estimated time remaining: 59 minutes, 56.5831 seconds
+
+i = 400, log likelihood = 710.775, acceptance probability = 0.00058651, time for particle = 41.21, process : 20
+
+
+Particle acceptance rate: 0.000307943
+Time needed so far for this iteration: 1 hours, 51 minutes, 23.33 seconds
+Estimated time remaining: 28 minutes, 24.2492 seconds
+
+i = 500, log likelihood = 711.622, acceptance probability = 0.000670691, time for particle = 78.55, process : 17
+
+
+Particle acceptance rate: 0.000300728
+Time needed so far for this iteration: 2 hours, 27 minutes, 42.51 seconds
+Estimated time remaining: 35.45 seconds
+
+
+
+Particle acceptance rate: 0.000301593
+Time needed so far for this iteration: 2 hours, 27 minutes, 42.51 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 68 needed 2 hours, 27 minutes, 46.17 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_68_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_68.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_68_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 69 with log-threshold of 710.914
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 
+
+Rejection sampler:
+Min Rejection Likelihood:	2.11845e-15
+Max Rejection Likelihood:	3.87943e-07
+Median Rejection Likelihood:	2.97362e-10
+Average Rejection Likelihood:	5.94872e-09
+Rejection Constant:	1.81094e-11, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 711.187, acceptance probability = 0.000240442, time for particle = 1.53, process : 22
+
+
+Particle acceptance rate: 0.000212404
+Time needed so far for this iteration: 57 minutes, 59.82 seconds
+Estimated time remaining: 3 hours, 53 minutes, 8.8764 seconds
+
+i = 200, log likelihood = 711.887, acceptance probability = 0.00075358, time for particle = 315.86, process : 17
+
+
+Particle acceptance rate: 0.00021857
+Time needed so far for this iteration: 1 hours, 20 minutes, 16.58 seconds
+Estimated time remaining: 2 hours, 1 minutes, 13.0358 seconds
+
+i = 300, log likelihood = 711.36, acceptance probability = 0.00925926, time for particle = 599.16, process : 18
+
+
+Particle acceptance rate: 0.000222084
+Time needed so far for this iteration: 1 hours, 59 minutes, 14.63 seconds
+Estimated time remaining: 1 hours, 20 minutes, 17.4509 seconds
+
+i = 400, log likelihood = 711.523, acceptance probability = 0.000154727, time for particle = 40.31, process : 22
+
+
+Particle acceptance rate: 0.000228435
+Time needed so far for this iteration: 2 hours, 33 minutes, 59 seconds
+Estimated time remaining: 39 minutes, 15.945 seconds
+
+i = 500, log likelihood = 711.657, acceptance probability = 0.000321337, time for particle = 0.13, process : 3
+
+
+Particle acceptance rate: 0.000233621
+Time needed so far for this iteration: 3 hours, 10 minutes, 16.28 seconds
+Estimated time remaining: 45.6651 seconds
+
+
+
+Particle acceptance rate: 0.000233888
+Time needed so far for this iteration: 3 hours, 10 minutes, 16.28 seconds
+Estimated time remaining: 0 seconds
+
+
+
+Iteration 69 needed 3 hours, 10 minutes, 21.07 seconds
+
+Sampling posterior...
+Finished sampling posterior.
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_69_posterior.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_69.txt
+current particles written into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_69_level.txt
+acceptance rates wrote into /cluster/home/mijan/ERK/Models_paper/Fgf_B1/results/sus_3_20/./fgf_acceptance_rates.txt
+
+Starting iteration 70 with log-threshold of 711.224
+
+Computing next sample distribution...
+
+DP-GMM estimation started. Number of Components : 
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+
+Rejection sampler:
+Min Rejection Likelihood:	9.86043e-15
+Max Rejection Likelihood:	1.91706e-06
+Median Rejection Likelihood:	5.0276e-10
+Average Rejection Likelihood:	1.77128e-08
+Rejection Constant:	2.55837e-11, corresponding to the 0.2 quantile.
+Finished computing sample distribution.
+i = 100, log likelihood = 711.421, acceptance probability = 0.000246366, time for particle = 626.86, process : 17
+
+
+Particle acceptance rate: 0.000157693
+Time needed so far for this iteration: 1 hours, 22 minutes, 37.16 seconds
+Estimated time remaining: 5 hours, 32 minutes, 7.7832 seconds
+
+i = 200, log likelihood = 711.465, acceptance probability = 0.000153327, time for particle = 243.85, process : 1
+
+
+Particle acceptance rate: 0.000151852
+Time needed so far for this iteration: 2 hours, 10 minutes, 0.63 seconds
+Estimated time remaining: 3 hours, 16 minutes, 18.9513 seconds
+
+i = 300, log likelihood = 711.392, acceptance probability = 2.43126e-05, time for particle = 168.98, process : 7
+
+
+Particle acceptance rate: 0.000154095
+Time needed so far for this iteration: 3 hours, 29 minutes, 23.81 seconds
+Estimated time remaining: 2 hours, 20 minutes, 59.6321 seconds
+
+i = 400, log likelihood = 711.286, acceptance probability = 9.72668e-05, time for particle = 34.63, process : 17
+
+
+Particle acceptance rate: 0.000152724
+Time needed so far for this iteration: 3 hours, 39 minutes, 42.81 seconds
+Estimated time remaining: 56 minutes, 1.61655 seconds
+
+mpirun: Forwarding signal 12 to job
+mpirun: Forwarding signal 12 to job
+--------------------------------------------------------------------------
+mpirun noticed that process rank 9 with PID 11283 on node eu-c7-061-04 exited on signal 12 (User defined signal 2).
+--------------------------------------------------------------------------
