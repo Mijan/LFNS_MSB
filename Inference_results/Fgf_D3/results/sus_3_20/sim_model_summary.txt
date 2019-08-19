@@ -1,0 +1,139 @@
+Problem file: /home/jan/crypt/Dropbox/BSSE/ERK/Models_paper/Fgf_D3/problem_fgf_sus_3_20.xml
+Output file: /home/jan/crypt/Dropbox/BSSE/ERK/Models_paper/Fgf_D3/results/sus_3_20/sim.txt
+
+Ode solver settings read from problem file:
+     min step size:	1e-12
+relative tolerance:	1e-10
+absolute tolerance:	1e-10
+Simulation time points read from problem file:
+	Initial time: 0, final time : 180 , interval : 2
+Parameters for simulation read from command line:
+	87.0342 6.6919e-06 2.3084 2.2589 13.0077 1.8658e-05 5.3246e-05 0.16665 0.13201 52.6393 0.083192 0.047981 0.00026797 0.25269 0.00019225 0.49611 0.40937 1.4253 0.00012185 0.00060889 1.7521 0.00047415 6.0176 0.59927 1.7692 1.8226 2.0539 2.1841e-05 4.8603e-05 0.32967 6.5329 0.18251 0.018659 0.0030659 0.20432 0.0068091 1.1132 0.0001 0.98662
+
+		No number of simulations provided! Assume default value of 1!
+
+       Parameters                  Bounds  Scale
+            k_1_2            [1e-06, 100] linear
+            K_1_2             [1e-06, 10] linear
+            k_2_1            [1e-06, 100] linear
+            K_2_1             [1e-06, 10] linear
+            k_3_4            [1e-06, 100] linear
+            K_3_4             [1e-06, 10] linear
+            K_NFB             [1e-06, 10] linear
+            k_4_3            [1e-06, 100] linear
+            K_4_3             [1e-06, 10] linear
+            k_5_6            [1e-06, 100] linear
+            K_5_6             [1e-06, 10] linear
+            k_6_5            [1e-06, 100] linear
+            K_6_5             [1e-06, 10] linear
+            k_7_8            [1e-06, 100] linear
+            K_7_8             [1e-06, 10] linear
+            k_8_7            [1e-06, 100] linear
+            K_8_7             [1e-06, 10] linear
+            f_1_2            [1e-06, 100] linear
+              f_h              [1e-05, 1] linear
+            F_1_2             [1e-06, 10] linear
+            h_hfr                [0.5, 6] linear
+            F_hfr             [1e-06, 10] linear
+           F_fgfr             [1e-06, 10] linear
+           h_fgfr                [0.5, 6] linear
+            f_2_1            [1e-06, 100] linear
+            F_2_1             [1e-06, 10] linear
+            h_nfb                [0.5, 6] linear
+        fgf_input              fixed to 0 linear
+              r_h              [1e-05, 1] linear
+            r_3_4            [1e-06, 100] linear
+            r_4_3            [1e-06, 100] linear
+            r_5_6            [1e-06, 100] linear
+            r_6_5            [1e-06, 100] linear
+            r_5_7            [1e-06, 100] linear
+            r_7_5            [1e-06, 100] linear
+   fgfr_init_mean             [0.0001, 2] linear
+fgfr_init_log_std          fixed to 1e-06 linear
+         nfb_init             [0.0001, 2] linear
+      h_init_mean                  [0, 2] linear
+   h_init_log_std          fixed to 1e-06 linear
+       FRET_sigma           [0.0001, 0.1] linear
+           FRET_E               [0.01, 1] linear
+          erk_max            fixed to 0.8 linear
+      erk_initial              fixed to 0 linear
+Species names:
+	Ras
+	Ras_star
+	Raf
+	Raf_star
+	Mek
+	Mek_star
+	Erk
+	Erk_star
+	Nfb
+	Nfb_star
+	FgfR
+	FgfR_star
+	H
+	H_F
+	H_F_R
+
+
+##################### MODEL #####################
+
+Ode Model
+Parameters: k_1_2 K_1_2 k_2_1 K_2_1 k_3_4 K_3_4 K_NFB k_4_3 K_4_3 k_5_6 K_5_6 k_6_5 K_6_5 k_7_8 K_7_8 k_8_7 K_8_7 f_1_2 f_h F_1_2 h_hfr F_hfr F_fgfr h_fgfr f_2_1 F_2_1 h_nfb fgf_input r_h r_3_4 r_4_3 r_5_6 r_6_5 r_5_7 r_7_5 
+Species: Ras Ras_star Raf Raf_star Mek Mek_star Erk Erk_star Nfb Nfb_star FgfR FgfR_star H H_F H_F_R 
+
+Equations:
+      (d Ras)/dt = -(k_1_2*(r_h*H_F_R+(1-r_h)*FgfR_star)*(Ras/(K_1_2+Ras)))+(k_2_1*(Ras_star/(K_2_1+Ras_star))) 
+ (d Ras_star)/dt = (k_1_2*(r_h*H_F_R+(1-r_h)*FgfR_star)*(Ras/(K_1_2+Ras)))-(k_2_1*(Ras_star/(K_2_1+Ras_star))) 
+      (d Raf)/dt = -(k_3_4*Ras_star*(Raf/(K_3_4+Raf))*(K_NFB^h_nfb/(K_NFB^h_nfb+Nfb_star^h_nfb)))+(k_4_3*(Raf_star/(K_4_3+Raf_star))) 
+ (d Raf_star)/dt = (k_3_4*Ras_star*(Raf/(K_3_4+Raf))*(K_NFB^h_nfb/(K_NFB^h_nfb+Nfb_star^h_nfb)))-(k_4_3*(Raf_star/(K_4_3+Raf_star))) 
+      (d Mek)/dt = -(k_5_6*Raf_star*(Mek/(K_5_6+Mek)))+(k_6_5*(Mek_star/(K_6_5+Mek_star))) 
+ (d Mek_star)/dt = (k_5_6*Raf_star*(Mek/(K_5_6+Mek)))-(k_6_5*(Mek_star/(K_6_5+Mek_star))) 
+      (d Erk)/dt = -(k_7_8*Mek_star*(Erk/(K_7_8+Erk)))+(k_8_7*(Erk_star/(K_8_7+Erk_star))) 
+ (d Erk_star)/dt = (k_7_8*Mek_star*(Erk/(K_7_8+Erk)))-(k_8_7*(Erk_star/(K_8_7+Erk_star))) 
+      (d Nfb)/dt = -(f_1_2*Erk_star*(Nfb/(F_1_2+Nfb))*((f_h*(H_F_R^h_hfr)/(F_hfr^h_hfr+H_F_R^h_hfr))+((1-f_h)*(FgfR_star^h_fgfr)/(F_fgfr^h_fgfr+FgfR_star^h_fgfr))))+(f_2_1*(Nfb_star/(F_2_1+Nfb_star))) 
+ (d Nfb_star)/dt = (f_1_2*Erk_star*(Nfb/(F_1_2+Nfb))*((f_h*(H_F_R^h_hfr)/(F_hfr^h_hfr+H_F_R^h_hfr))+((1-f_h)*(FgfR_star^h_fgfr)/(F_fgfr^h_fgfr+FgfR_star^h_fgfr))))-(f_2_1*(Nfb_star/(F_2_1+Nfb_star))) 
+     (d FgfR)/dt = -(r_3_4*fgf_input*FgfR)+(r_4_3*FgfR_star)-(r_5_7*H_F*FgfR)+(r_7_5*H_F_R) 
+(d FgfR_star)/dt = (r_3_4*fgf_input*FgfR)-(r_4_3*FgfR_star) 
+        (d H)/dt = -(r_5_6*H*fgf_input)+(r_6_5*H_F) 
+      (d H_F)/dt = (r_5_6*H*fgf_input)-(r_6_5*H_F)-(r_5_7*H_F*FgfR)+(r_7_5*H_F_R) 
+    (d H_F_R)/dt = (r_5_7*H_F*FgfR)-(r_7_5*H_F_R) 
+
+
+##################### INITIAL VALUES #####################
+
+Parameters: fgfr_init_mean nfb_init h_init_mean 
+Species: Ras Raf Mek Erk FgfR FgfR_star Nfb Ras_star Raf_star Mek_star Erk_star Nfb_star H H_F H_F_R 
+      State Ras:	0.1 
+      State Raf:	0.7 
+      State Mek:	0.68 
+      State Erk:	0.26 
+     State FgfR:	fgfr_init_mean 
+State FgfR_star:	0 
+      State Nfb:	nfb_init 
+ State Ras_star:	0 
+ State Raf_star:	0 
+ State Mek_star:	0 
+ State Erk_star:	0 
+ State Nfb_star:	0 
+        State H:	h_init_mean 
+      State H_F:	0 
+    State H_F_R:	0 
+
+
+##################### MEASUREMENT MODEL #####################
+
+Parameters: FRET_sigma FRET_E erk_max erk_initial 
+Species: Erk Erk_star 
+
+Normal numbers:
+r_1:	mean: 0	std: 1
+
+
+Measurements:
+       fret_measure = (0.15*Erk_star+erk_initial*(-1.15*Erk-1.15*Erk_star+FRET_E*Erk_star)+erk_max*((1+0.15*FRET_E*erk_initial)*Erk+(1-1.15*FRET_E+0.15*FRET_E*erk_initial)*Erk_star))/((erk_max-erk_initial)*(Erk+Erk_star-FRET_E*Erk_star))+r_1*FRET_sigma 
+
+Log Likelihood:
+       fret_measure:	-(fret_measure-(0.15*Erk_star+erk_initial*(-1.15*Erk-1.15*Erk_star+FRET_E*Erk_star)+erk_max*((1+0.15*FRET_E*erk_initial)*Erk+(1-1.15*FRET_E+0.15*FRET_E*erk_initial)*Erk_star))/((erk_max-erk_initial)*(Erk+Erk_star-FRET_E*Erk_star)))^2/(2*FRET_sigma^2)-log(FRET_sigma*sqrt(2*_pi)) 
+
+
+Simulated modelconfigurations: sus_2-5ng, sus_250ng, 3_20_2-5ng, 3_20_250ng, sp_10_0-25ng, sp_10_2-5ng, sp_10_25ng, sp_10_250ng, sp_5_0-25ng, sp_5_2-5ng, sp_5_25ng, sp_5_250ng, sus_0-25ng, 3_20_25ng, mixed_2-5ng, mixed_25ng, mixed_250ng, sp_60_2-5ng, sp_60_250ng
