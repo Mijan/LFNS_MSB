@@ -1,0 +1,6 @@
+The here presented inference results, have been obtained using a slightly earlier version of the LF-NS toolbox, 
+which is why the "*_log.txt" files in the results folder have a slgithly different format then the new "*_log.txt" files. 
+
+The enumerated fiels "fgf_[number].txt" and "fgf_[number]_likelihoods.txt" contain the particle of each live set as well 
+as the corresponding log-likelihoods. The posterior particles are saved in the files "fgf_posterior.txt" and the weights of each particle
+are saved in the files "fgf_posterior_weights.txt"
