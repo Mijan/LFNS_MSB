@@ -14,58 +14,24 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${LFNS_SOURCE_DIR}/cmake/Modules/")
 
 ## Boost
 find_package(Boost 1.54.0 REQUIRED COMPONENTS program_options system filesystem mpi serialization)
-#if (NOT Boost_FOUND)
-#    message("Boost library not found (you can set Boost location with the option -DBOOST_ROOT=<path to boost>). Shipped Boost library in ${CMAKE_SOURCE_DIR}/required_packages will be used!")
-#    if (NOT DEFINED ENV{BOOST_ROOT})
-#        set(BOOST_ROOT "${CMAKE_SOURCE_DIR}/required_packages/" CACHE FILEPATH "The location of the Boost library")
-#    endif ()
-#    find_package(Boost 1.54.0 REQUIRED COMPONENTS program_options system filesystem mpi serialize)
-#endif ()
 include_directories(${Boost_INCLUDE_DIR})
 
 ## Eigen
 find_package(Eigen3 REQUIRED)
-#if (NOT Eigen3_FOUND)
-#    message("Eigen3 library not found (you can set Eigen3 location through the environment variable EIGEN3_ROOT). Shipped Eigen3 library in ${CMAKE_SOURCE_DIR}/required_packages/eigen3.4 will be used!")
-#    if (NOT DEFINED ENV{EIGEN3_ROOT})
-#        set(ENV{EIGEN3_ROOT} "${CMAKE_SOURCE_DIR}/required_packages/eigen3.4/" CACHE FILEPATH "The location of the Eigen library")
-#    endif ()
-#    find_package(Eigen3 REQUIRED)
-#endif ()
 include_directories(${EIGEN3_INCLUDE_DIR})
 
 ## Sundials
 find_package(Sundials REQUIRED COMPONENTS cvode nvecserial)
-#if (NOT SUNDIALS_FOUND)
-#    message("Sundials library not found (you can set Sundials location through the environment variable MUPARSER_ROOT). Shipped Sundials library in ${CMAKE_SOURCE_DIR}/required_packages/cvode-2.9.0 will be used!")
-#    if (NOT DEFINED ENV{SUNDIALS_ROOT})
-#        set(ENV{SUNDIALS_ROOT} "${CMAKE_SOURCE_DIR}/required_packages/cvode-2.9.0/" CACHE FILEPATH
-#                "The location of the cvode library")
-#    endif ()
-#    find_package(Sundials REQUIRED COMPONENTS cvode nvecserial)
-#endif ()
 include_directories(${SUNDIALS_INCLUDE_DIR})
 MESSAGE("Including Sundials directory ${SUNDIALS_INCLUDE_DIR}")
 
 ## DP-GMM
-#if (NOT DEFINED ENV{DPGMM_ROOT})
-#    set(ENV{DPGMM_ROOT} "${CMAKE_SOURCE_DIR}/../../DPGMM_INSTALL/" CACHE FILEPATH
-#            "The location of the DPGMM library")
-#endif ()
 find_package(DPGMM REQUIRED)
 include_directories(${DPGMM_INCLUDE_DIR})
 MESSAGE("Including DPGMM directory ${DPGMM_INCLUDE_DIR}")
 
 ## muparser
 find_package(muparser)
-if (NOT MUPARSER_FOUND)
-    message("muparser library not found (you can set muparser location through the environment variable MUPARSER_ROOT). Shipped muparser library in ${CMAKE_SOURCE_DIR}/required_packages/muparser-2.2.5 will be used!")
-    if (NOT DEFINED ENV{MUPARSER_ROOT})
-        set(ENV{MUPARSER_ROOT} "${CMAKE_SOURCE_DIR}/required_packages/muparser-2.2.5/" CACHE FILEPATH
-                "The location of the mu_parser library")
-    endif ()
-    find_package(muparser REQUIRED)
-endif ()
 include_directories(${MUPARSER_INCLUDE_DIR})
 MESSAGE("Including muParser directory ${MUPARSER_INCLUDE_DIR}")
 
